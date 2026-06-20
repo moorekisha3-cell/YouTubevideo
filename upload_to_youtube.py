@@ -37,9 +37,8 @@ VIDEO1_SCENES = [
     BASE + "hf_20260620_041128_bde26485-8386-4114-a48d-be7ebd4a90c5.mp4",   # REITs
     BASE + "hf_20260620_041129_40866303-b5bf-4795-bc4d-198a891830fb.mp4",   # Portfolio
     BASE + "hf_20260620_041130_9b48f92a-1dfa-46de-b131-cca115018487.mp4",   # Encouragement
-    # Scene 9 & 10 URLs will be filled in below after generation completes
-    "SCENE_9_RISK_URL",   # Risk Disclaimer  — job ee62a735-de45-4f21-9c44-8896627309ac
-    "SCENE_10_CTA_URL",   # CTA Outro        — job a7272826-0a6e-4735-a238-7f4e87bacd15
+    BASE + "hf_20260620_061213_ee62a735-de45-4f21-9c44-8896627309ac.mp4",   # Risk Disclaimer
+    BASE + "hf_20260620_061215_a7272826-0a6e-4735-a238-7f4e87bacd15.mp4",   # CTA Outro
 ]
 
 VIDEO2_SCENES = [
