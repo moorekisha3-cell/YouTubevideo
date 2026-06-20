@@ -29,7 +29,11 @@
 
 **[CAM]**
 
-> "Whether you're already retired, planning to retire in the next few years, or just starting to think about financial security — this video is for you. So grab a cup of coffee, get comfortable, and let's dive in. And if you find this helpful, please hit that subscribe button — there's so much more coming your way on this channel."
+> "Whether you're already retired, planning to retire in the next few years, or just starting to think about financial security — this video is for you. So grab a cup of coffee, get comfortable, and let's dive in."
+
+**[GFX: Animated thumbs-up + subscribe bell pulse]**
+
+> "Real quick — if you're finding value in plain-English financial education like this, please hit that **Like** button right now and tap **Subscribe** to Economics 101. It only takes a second and it genuinely helps more people just like you find this channel. Alright — let's get into it."
 
 ---
 
@@ -112,6 +116,14 @@
 **[CAM]**
 
 > "ETFs also tend to have very low fees, which means more of your money stays working for you."
+
+---
+
+**[GFX: Quick mid-video subscribe reminder banner slides in at bottom of screen]**
+
+**[CAM – Casual aside, warm smile]**
+
+> "By the way — if you're halfway through this video and finding it useful, this is the perfect moment to hit that **Like** button. It tells YouTube this content is worth sharing, and it helps us reach more people who need this information. Thank you so much — now let's keep going."
 
 ---
 

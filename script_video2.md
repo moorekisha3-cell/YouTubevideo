@@ -30,7 +30,11 @@
 
 **[CAM]**
 
-> "And if you're already watching this channel, you know we break down complex financial topics into plain English. That's exactly what we're going to do right now. Let's get into it."
+> "And if you're already watching this channel, you know we break down complex financial topics into plain English. That's exactly what we're going to do right now."
+
+**[GFX: Animated thumbs-up + subscribe bell pulse]**
+
+> "Before we dive in — if this kind of straightforward financial content is helpful to you, please take one second to hit the **Like** button and **Subscribe** to Economics 101 right now. Every like helps more people like you find us. Okay — let's get into the five mistakes."
 
 ---
 
@@ -93,6 +97,12 @@
 **[CAM]**
 
 > "The takeaway: if you plan to keep working, think very carefully about whether claiming early makes sense. In many cases, waiting is the smarter move."
+
+**[GFX: Mid-video subscribe reminder banner slides in at bottom of screen]**
+
+**[CAM – Warm casual aside]**
+
+> "We are halfway through — and we still have two more big mistakes to cover. If you haven't already, this is a great time to hit **Like** and **Subscribe** so you don't miss our next video. It means the world to this channel. Alright, let's keep going."
 
 ---
 
