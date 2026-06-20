@@ -80,7 +80,7 @@ Whether you're 52 or 68, it is NOT too late to start. Here's what we cover:
 
 ⚠️ This video is for educational purposes only and is not personalized financial advice. Always consult a qualified financial advisor before making investment decisions.
 
-🔔 Subscribe to Economics 101 for plain-English financial education every week!
+🔔 Subscribe to Economics 1144 for plain-English financial education every week!
 👍 If this helped you, please LIKE this video!
 
 #DividendInvesting #PassiveIncome #RetirementIncome #DividendStocks #PersonalFinance #Economics101 #FinancialFreedom #Investing #REITs #DividendETF""",
@@ -122,7 +122,7 @@ If you're 55 or older and haven't claimed yet — this could be one of the most 
 
 ⚠️ This video is for educational purposes only. For personalized advice, consult a Social Security specialist or licensed financial advisor.
 
-🔔 Subscribe to Economics 101 for clear, plain-English retirement and personal finance content every week!
+🔔 Subscribe to Economics 1144 for clear, plain-English retirement and personal finance content every week!
 👍 Hit LIKE if this video helped you!
 
 #SocialSecurity #RetirementPlanning #SocialSecurityMistakes #SocialSecurityBenefits #RetirementIncome #PersonalFinance #Economics101 #WhenToClaimSocialSecurity #SpousalBenefit #SSA""",

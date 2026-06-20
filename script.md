@@ -1,4 +1,4 @@
-# Economics 101: How to Build $1,000 a Month in Dividend Income
+# Economics 1144: How to Build $1,000 a Month in Dividend Income
 ### Full YouTube Script | 8–10 Minutes | Faceless Presenter Style
 
 ---
@@ -33,7 +33,7 @@
 
 **[GFX: Animated thumbs-up + subscribe bell pulse]**
 
-> "Real quick — if you're finding value in plain-English financial education like this, please hit that **Like** button right now and tap **Subscribe** to Economics 101. It only takes a second and it genuinely helps more people just like you find this channel. Alright — let's get into it."
+> "Real quick — if you're finding value in plain-English financial education like this, please hit that **Like** button right now and tap **Subscribe** to Economics 1144. It only takes a second and it genuinely helps more people just like you find this channel. Alright — let's get into it."
 
 ---
 
@@ -239,7 +239,7 @@
 
 **[CAM – Final warm smile]**
 
-> "Thank you so much for watching Economics 101. I'll see you in the next one."
+> "Thank you so much for watching Economics 1144. I'll see you in the next one."
 
 ---
 

@@ -1,4 +1,4 @@
-# Economics 101: Social Security Secrets Most People Don't Know
+# Economics 1144: Social Security Secrets Most People Don't Know
 ### Full YouTube Script | 8–10 Minutes | Faceless Presenter Style
 ### Topic: "5 Social Security Mistakes That Could Cost You $100,000"
 
@@ -34,7 +34,7 @@
 
 **[GFX: Animated thumbs-up + subscribe bell pulse]**
 
-> "Before we dive in — if this kind of straightforward financial content is helpful to you, please take one second to hit the **Like** button and **Subscribe** to Economics 101 right now. Every like helps more people like you find us. Okay — let's get into the five mistakes."
+> "Before we dive in — if this kind of straightforward financial content is helpful to you, please take one second to hit the **Like** button and **Subscribe** to Economics 1144 right now. Every like helps more people like you find us. Okay — let's get into the five mistakes."
 
 ---
 
@@ -190,7 +190,7 @@
 
 **[CAM – Final warm smile]**
 
-> "Thank you so much for being here. This is Economics 101, and I'll see you in the next video."
+> "Thank you so much for being here. This is Economics 1144, and I'll see you in the next video."
 
 ---
 
