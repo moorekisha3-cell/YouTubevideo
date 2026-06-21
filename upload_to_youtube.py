@@ -83,7 +83,7 @@ Whether you're 52 or 68, it is NOT too late to start. Here's what we cover:
 👍 If this helped you, please LIKE this video!
 
 #DividendInvesting #PassiveIncome #RetirementIncome #DividendStocks #PersonalFinance #Economics101 #FinancialFreedom #Investing #REITs #DividendETF""",
-    "tags": ["dividend income","how to build passive income","$1000 a month dividends","dividend investing for beginners","dividend stocks","dividend ETFs","REITs for income","retirement income strategy","passive income investing","how much to invest for dividends","blue chip stocks","dividend aristocrats","income investing over 50","personal finance for retirees","economics 101","financial education","retirement planning","dividend yield explained","how to retire on dividends","investing for retirement"],
+    "tags": ["dividend income","how to build passive income","1000 a month dividends","dividend investing for beginners","dividend stocks","dividend ETFs","REITs for income","retirement income strategy","passive income investing","how much to invest for dividends","blue chip stocks","dividend aristocrats","income investing over 50","personal finance for retirees","economics 101","financial education","retirement planning","dividend yield explained","how to retire on dividends","investing for retirement"],
     "categoryId": "27",  # Education
 }
 
@@ -210,7 +210,7 @@ def upload_video(youtube, video_path, meta):
 
 
 def set_thumbnail(youtube, video_id, thumbnail_url):
-    thumb_path = "/tmp/thumbnail.jpg"
+    thumb_path = Path(__file__).parent / "thumbnail.jpg"
     r = requests.get(thumbnail_url, timeout=30)
     with open(thumb_path, "wb") as f:
         f.write(r.content)
