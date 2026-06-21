@@ -125,7 +125,7 @@ If you're 55 or older and haven't claimed yet — this could be one of the most 
 👍 Hit LIKE if this video helped you!
 
 #SocialSecurity #RetirementPlanning #SocialSecurityMistakes #SocialSecurityBenefits #RetirementIncome #PersonalFinance #Economics101 #WhenToClaimSocialSecurity #SpousalBenefit #SSA""",
-    "tags": ["social security mistakes","when to claim social security","social security benefits","claiming social security at 62","social security at 70","spousal social security benefit","social security earnings test","social security taxes","check social security earnings record","ssa.gov","full retirement age","social security strategy","retirement planning","personal finance over 55","economics 101","how to maximize social security","social security tips","social security 2024","retire on social security","social security income"],
+    "tags": ["social security mistakes","when to claim social security","social security benefits","claiming social security at 62","social security at 70","spousal social security benefit","social security earnings test","social security taxes","check social security earnings record","social security administration","full retirement age","social security strategy","retirement planning","personal finance over 55","economics 101","how to maximize social security","social security tips","social security 2024","retire on social security","social security income"],
     "categoryId": "27",
 }
 
