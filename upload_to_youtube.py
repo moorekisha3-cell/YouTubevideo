@@ -273,6 +273,121 @@ In this video, I break down both accounts in plain English so you can make a con
 
 VIDEO4_THUMBNAIL = BASE + "hf_20260621_050425_3a47fa14-f4ed-481a-975c-f0ebba77ba87.png"
 
+# ── Video 5: The Ladybird Deed ────────────────────────────────────────────────
+VIDEO5_SCENES = [
+    BASE + "hf_20260621_054512_834a39c3-813c-4af1-a718-28e8e9d4c2c4.mp4",   # Hook
+    BASE + "hf_20260621_054514_80bcbe8e-363e-44d9-ae02-a61524d0c653.mp4",   # What Is a Ladybird Deed
+    BASE + "hf_20260621_054515_7a08ee37-df98-4e4c-a8d0-03b3537e9a88.mp4",   # How It Works
+    BASE + "hf_20260621_054517_a950996a-e666-4784-a42d-520e6fd30f2c.mp4",   # Medicaid Advantage
+    BASE + "hf_20260621_054518_a32196a0-e330-44ac-8e9f-143b73e63d64.mp4",   # Tax Benefits
+    BASE + "hf_20260621_054520_40f1ddd3-a853-4ddf-91ac-95b687af32f1.mp4",   # Which States
+    BASE + "hf_20260621_054521_88f8bb32-3d12-4231-9de2-ff5f74289ef6.mp4",   # What to Watch Out For
+    BASE + "hf_20260621_054522_cfc8bbfe-bdbb-4c84-a30d-95ee5c5d1449.mp4",   # CTA
+]
+
+VIDEO5_AUDIO = [
+    BASE + "hf_20260621_054531_907ac342-1003-4aeb-aae9-25ad72089f4e.mp3",   # Hook
+    BASE + "hf_20260621_054536_dd5b0170-3f9a-4446-9774-eef920d565b2.mp3",   # What Is a Ladybird Deed
+    BASE + "hf_20260621_054541_fc479576-55eb-42a0-a96e-682ed412c555.mp3",   # How It Works
+    BASE + "hf_20260621_054546_78884f1f-dd73-4ad3-8bc9-49e9497b8afc.mp3",   # Medicaid Advantage
+    BASE + "hf_20260621_054551_7586e9e0-4bbc-4a4c-8f72-c4db41fc7e64.mp3",   # Tax Benefits
+    BASE + "hf_20260621_054555_1ba96ebf-5218-4732-86da-9365533f0cba.mp3",   # Which States
+    BASE + "hf_20260621_054600_15a5f194-cc58-469e-a1ba-5fa08b2bacb6.mp3",   # What to Watch Out For
+    BASE + "hf_20260621_054604_bccf5d83-bbe3-482e-a5e9-cb56c79df954.mp3",   # CTA
+]
+
+VIDEO5_META = {
+    "title": "The Ladybird Deed — The Smartest Way to Pass Your Home to Your Family",
+    "description": """🏡 What if you could pass your home directly to your children — without a will, without probate, and without losing your Medicaid benefits? It's called the Ladybird Deed, and it's one of the most powerful estate planning tools most people have never heard of.
+
+In this video I break down everything you need to know in plain English:
+
+✅ What a Ladybird Deed (Enhanced Life Estate Deed) actually is
+✅ How it works step by step — and why it beats a regular will
+✅ How it protects your home from Medicaid Estate Recovery
+✅ The stepped-up tax basis benefit that saves your heirs thousands
+✅ Which 5 states recognize it: FL, MI, TX, VT, WV
+✅ The 4 things to watch out for before you sign one
+
+📌 CHAPTERS:
+0:00 – Introduction & Hook
+0:50 – What Is a Ladybird Deed?
+2:15 – How It Works (Step by Step)
+3:30 – The Medicaid Advantage
+4:45 – Tax Benefits (Stepped-Up Basis)
+5:45 – Which States Allow It?
+6:45 – What to Watch Out For
+7:45 – Encouragement & Call to Action
+
+⚠️ This video is for educational purposes only and is not personalized legal or financial advice. Always consult a licensed estate planning attorney in your state.
+
+🔔 Subscribe to Economics 1144 for plain-English financial and legal education every week!
+👍 If this helped you, please LIKE this video!
+
+#LadybirdDeed #EstatePlanning #Probate #Medicaid #HomeOwnership #PersonalFinance #Economics1144 #EnhancedLifeEstateDeed #FloridaEstatePlanning #AvoidProbate""",
+    "tags": [],
+    "categoryId": "27",
+}
+
+VIDEO5_THUMBNAIL = BASE + "hf_20260621_054616_0bb67d91-42eb-401f-aaaf-43c18c86eb3b.png"
+
+# ── Video 6: Ladybird Deed vs Quitclaim Deed ─────────────────────────────────
+VIDEO6_SCENES = [
+    BASE + "hf_20260621_054929_1f0fe2eb-e62c-4b3c-9c6c-84bbe6754dba.mp4",   # Hook
+    BASE + "hf_20260621_054930_4b236766-533a-4351-92de-0d3a66d06cea.mp4",   # What Is a Quitclaim Deed
+    BASE + "hf_20260621_054931_d3c2d988-ca74-4f32-9bc5-10ffc752b9d6.mp4",   # Problems with Quitclaim
+    BASE + "hf_20260621_054933_25ae8bdd-ee79-42c9-a144-5d7ff55ff749.mp4",   # What Is a Ladybird Deed
+    BASE + "hf_20260621_054934_b9a42065-add3-41d5-9c93-ab574d5b4b85.mp4",   # Side-by-Side Comparison
+    BASE + "hf_20260621_054935_2e103ff8-2dbe-46c3-86f1-6d92491f7ac7.mp4",   # When Quitclaim Is OK
+    BASE + "hf_20260621_125601_004468be-d0d9-47f5-96c2-a5c169a91935.mp4",     # Which One to Choose
+    BASE + "hf_20260621_125602_a7e29c97-0d97-4f14-bc43-859d8c69d3ca.mp4",     # CTA
+]
+
+VIDEO6_AUDIO = [
+    BASE + "hf_20260621_054952_839bf70a-9811-4ac3-8ba3-e6c8386ba779.mp3",   # Hook
+    BASE + "hf_20260621_054957_2451f15c-8e3d-40b9-88e4-d5c60fc595d5.mp3",   # What Is a Quitclaim Deed
+    BASE + "hf_20260621_055003_086a83a5-6f81-4396-9108-e0534ddc8357.mp3",   # Problems with Quitclaim
+    BASE + "hf_20260621_055011_71fe97a8-86f5-47f8-bc7b-474c97c79295.mp3",   # What Is a Ladybird Deed
+    BASE + "hf_20260621_055013_996fcf2a-f688-4818-b846-1b214ba28a21.mp3",   # Side-by-Side Comparison
+    BASE + "hf_20260621_055017_a273041a-5675-4a94-8df1-0ef8c1863144.mp3",   # When Quitclaim Is OK
+    BASE + "hf_20260621_055022_f4359c42-7417-4de5-b7b3-2b7f0c442699.mp3",   # Which One to Choose
+    BASE + "hf_20260621_055026_4656c1c4-6e7c-48cf-b4a0-8d63abd62d12.mp3",   # CTA
+]
+
+VIDEO6_META = {
+    "title": "Ladybird Deed vs Quitclaim Deed — Which One Actually Protects Your Home?",
+    "description": """⚠️ Thinking about transferring your home to your children? Choosing between a Ladybird Deed and a Quitclaim Deed could be the difference between protecting your family's future — or accidentally triggering a Medicaid penalty, a massive tax bill, or losing control of your own home.
+
+In this video I break down the full comparison in plain English so you know exactly which one to use and why.
+
+✅ What a Quitclaim Deed actually is — and the 3 costly mistakes it causes
+✅ How the Ladybird Deed solves every one of those problems
+✅ Side-by-side comparison: Control, Probate, Medicaid, Taxes
+✅ When a Quitclaim Deed IS actually the right tool
+✅ A simple framework to decide which one you need
+
+📌 CHAPTERS:
+0:00 – Introduction & Hook
+0:50 – What Is a Quitclaim Deed?
+2:15 – The 3 Problems with Using a Quitclaim Deed for Estate Planning
+3:30 – What Is a Ladybird Deed?
+4:45 – Side-by-Side Comparison (Control, Probate, Medicaid, Taxes)
+5:45 – When a Quitclaim Deed IS Appropriate
+6:30 – Which One Is Right for You?
+7:30 – Encouragement & Call to Action
+
+⚠️ This video is for educational purposes only. Consult a licensed estate planning or real estate attorney in your state before signing any deed.
+
+🔔 Subscribe to Economics 1144 for plain-English financial and legal education every week!
+👍 If this helped you, please LIKE this video!
+
+#LadybirdDeed #QuitclaimDeed #EstatePlanning #Probate #Medicaid #HomeOwnership #PersonalFinance #Economics1144 #AvoidProbate #EstatePlanningTips""",
+    "tags": [],
+    "categoryId": "27",
+}
+
+VIDEO6_THUMBNAIL = BASE + "hf_20260621_055033_45b1b4c3-c381-4d1f-904f-0ee11ecd7181.png"
+
 
 def download_scenes(scenes, folder):
     folder = Path(folder)
@@ -435,6 +550,28 @@ def main():
         concatenate(merged4, v4_out)
         v4_id = upload_video(youtube, v4_out, VIDEO4_META)
         set_thumbnail(youtube, v4_id, VIDEO4_THUMBNAIL)
+
+    # ── VIDEO 5: The Ladybird Deed ────────────────────────────────────────────
+    print("\n=== VIDEO 5: The Ladybird Deed ===")
+    v5_scenes = download_scenes(VIDEO5_SCENES, work_dir / "video5_scenes")
+    v5_audio  = download_audio(VIDEO5_AUDIO,  work_dir / "video5_audio")
+    if v5_scenes and v5_audio:
+        merged5 = merge_scenes_with_audio(v5_scenes, v5_audio, work_dir / "video5_merged")
+        v5_out = str(work_dir / "video5_final.mp4")
+        concatenate(merged5, v5_out)
+        v5_id = upload_video(youtube, v5_out, VIDEO5_META)
+        set_thumbnail(youtube, v5_id, VIDEO5_THUMBNAIL)
+
+    # ── VIDEO 6: Ladybird Deed vs Quitclaim Deed ──────────────────────────────
+    print("\n=== VIDEO 6: Ladybird Deed vs Quitclaim Deed ===")
+    v6_scenes = download_scenes(VIDEO6_SCENES, work_dir / "video6_scenes")
+    v6_audio  = download_audio(VIDEO6_AUDIO,  work_dir / "video6_audio")
+    if v6_scenes and v6_audio:
+        merged6 = merge_scenes_with_audio(v6_scenes, v6_audio, work_dir / "video6_merged")
+        v6_out = str(work_dir / "video6_final.mp4")
+        concatenate(merged6, v6_out)
+        v6_id = upload_video(youtube, v6_out, VIDEO6_META)
+        set_thumbnail(youtube, v6_id, VIDEO6_THUMBNAIL)
 
     print("\n✅ All done!")
 
