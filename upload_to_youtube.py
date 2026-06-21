@@ -54,27 +54,27 @@ VIDEO2_SCENES = [
 
 # ── Audio URLs (Tasha ElevenLabs voice) ──────────────────────────────────────
 VIDEO1_AUDIO = [
-    BASE + "hf_20260621_043621_79af1a94-a046-4eb9-b90d-c6bc0ee5ccf5.mp3",  # Hook
-    BASE + "hf_20260621_043627_c3aee294-6261-476e-8172-3e7ad48531f1.mp3",  # What Are Dividends
-    BASE + "hf_20260621_043633_e2de661a-e462-448b-8ec4-edd5621ac7d9.mp3",  # How Much Do You Need
-    BASE + "hf_20260621_043638_c4a4c16e-8233-481a-a3dc-cdfb9c4bfd74.mp3",  # Dividend ETFs
-    BASE + "hf_20260621_043642_458a973d-01fc-4d6c-a187-43e318db59f3.mp3",  # Blue-Chip Stocks
-    BASE + "hf_20260621_043645_3ef01211-a289-4cae-86f8-08d46d288f6d.mp3",  # REITs
-    BASE + "hf_20260621_043650_d008398d-d54d-4516-a552-2bda9242bb8a.mp3",  # Sample Portfolio
-    BASE + "hf_20260621_043655_1816e2fe-941f-4ae3-988a-2c56567e55bc.mp3",  # Risk Disclaimer
-    BASE + "hf_20260621_043659_d40a9f47-344e-43f6-8bd7-5df64db50b0e.mp3",  # Encouragement
-    BASE + "hf_20260621_043701_73641d31-dadc-4cee-a6d2-122b380ca7ba.mp3",  # CTA Outro
+    BASE + "hf_20260621_044059_8b9c7064-8b21-4946-9832-55aa16fa1cc3.mp3",  # Hook
+    BASE + "hf_20260621_044105_0f4f6916-e024-47f0-bb97-9e7e0d16a58f.mp3",  # What Are Dividends
+    BASE + "hf_20260621_044110_b221940d-8e9b-4d0d-8b99-3cd9149a4c01.mp3",  # How Much Do You Need
+    BASE + "hf_20260621_044117_d6751f2c-e0ee-45ea-ab63-c04ec07abad5.mp3",  # Dividend ETFs
+    BASE + "hf_20260621_044119_79872945-f410-4e3e-bdc4-9acc5b2979b5.mp3",  # Blue-Chip Stocks
+    BASE + "hf_20260621_044123_aa05981c-4792-4d79-b45e-461787a3c266.mp3",  # REITs
+    BASE + "hf_20260621_044130_fa025da4-636f-4c7a-b039-b9597e78aa8e.mp3",  # Sample Portfolio
+    BASE + "hf_20260621_044133_102e329f-e332-467b-b323-8d8c432dddec.mp3",  # Risk Disclaimer
+    BASE + "hf_20260621_044137_3f25b5f4-f065-47f2-8f46-29d86f251935.mp3",  # Encouragement
+    BASE + "hf_20260621_044139_2694b2dd-f0cd-44e1-974c-7a991be6bb56.mp3",  # CTA Outro
 ]
 
 VIDEO2_AUDIO = [
-    BASE + "hf_20260621_032932_439d446b-666f-479f-bb57-e0b0a1b58c31.mp3",  # Hook
-    BASE + "hf_20260621_032937_e4710790-7f15-46cb-95a3-d408c71a4a84.mp3",  # Mistake 1
-    BASE + "hf_20260621_032941_77ef44dd-1251-4fd3-8196-c521a7987d3e.mp3",  # Mistake 2
-    BASE + "hf_20260621_032947_d635ba92-f445-4a4c-b364-c0e1c22debb0.mp3",  # Mistake 3
-    BASE + "hf_20260621_032952_3e1121ef-f86c-45f2-9b9f-2d98a102ea0c.mp3",  # Mistake 4
-    BASE + "hf_20260621_032956_b229ef8e-6d22-4f40-9d99-91710227dece.mp3",  # Mistake 5
-    BASE + "hf_20260621_033000_100ba092-0aee-4fcf-8c2c-fc70d04581af.mp3",  # What To Do
-    BASE + "hf_20260621_033004_b59bc499-02b5-4912-b3da-c529b6b49b58.mp3",  # Outro CTA
+    BASE + "hf_20260621_044142_fd858ccc-975f-471f-8e64-6e3367039361.mp3",  # Hook
+    BASE + "hf_20260621_044146_675ebead-7dd8-485e-9732-f7da1cb4738a.mp3",  # Mistake 1
+    BASE + "hf_20260621_044149_5f4e4422-ecb6-44a5-8953-866f250d338f.mp3",  # Mistake 2
+    BASE + "hf_20260621_044154_d7a7ff3c-5c96-459d-a575-bd67e67cbf00.mp3",  # Mistake 3
+    BASE + "hf_20260621_044156_7be3e704-5684-4326-acb4-e7c69b68b476.mp3",  # Mistake 4
+    BASE + "hf_20260621_044159_ae5878ab-88e3-49cc-88df-f8de2c369faa.mp3",  # Mistake 5
+    BASE + "hf_20260621_044202_81dfb692-05a9-41fd-90ae-e4b46f1fe643.mp3",  # What To Do
+    BASE + "hf_20260621_044205_ec0853f6-d336-4c67-b5e8-d9d4ceb81111.mp3",  # Outro CTA
 ]
 
 # ── SEO Metadata ──────────────────────────────────────────────────────────────
