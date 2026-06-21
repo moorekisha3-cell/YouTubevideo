@@ -53,16 +53,15 @@ VIDEO2_SCENES = [
 ]
 
 # ── Audio URLs (Tasha ElevenLabs voice) ──────────────────────────────────────
-# These will be filled in once audio generation completes
 VIDEO2_AUDIO = [
-    BASE + "AUDIO_01_PENDING",  # job 439d446b — Hook
-    BASE + "AUDIO_02_PENDING",  # job e4710790 — Mistake 1
-    BASE + "AUDIO_03_PENDING",  # job 77ef44dd — Mistake 2
-    BASE + "AUDIO_04_PENDING",  # job d635ba92 — Mistake 3 + mid CTA
-    BASE + "AUDIO_05_PENDING",  # job 3e1121ef — Mistake 4
-    BASE + "AUDIO_06_PENDING",  # job b229ef8e — Mistake 5
-    BASE + "AUDIO_07_PENDING",  # job 100ba092 — What To Do
-    BASE + "AUDIO_08_PENDING",  # job b59bc499 — Outro CTA
+    BASE + "hf_20260621_032932_439d446b-666f-479f-bb57-e0b0a1b58c31.mp3",  # Hook
+    BASE + "hf_20260621_032937_e4710790-7f15-46cb-95a3-d408c71a4a84.mp3",  # Mistake 1
+    BASE + "hf_20260621_032941_77ef44dd-1251-4fd3-8196-c521a7987d3e.mp3",  # Mistake 2
+    BASE + "hf_20260621_032947_d635ba92-f445-4a4c-b364-c0e1c22debb0.mp3",  # Mistake 3
+    BASE + "hf_20260621_032952_3e1121ef-f86c-45f2-9b9f-2d98a102ea0c.mp3",  # Mistake 4
+    BASE + "hf_20260621_032956_b229ef8e-6d22-4f40-9d99-91710227dece.mp3",  # Mistake 5
+    BASE + "hf_20260621_033000_100ba092-0aee-4fcf-8c2c-fc70d04581af.mp3",  # What To Do
+    BASE + "hf_20260621_033004_b59bc499-02b5-4912-b3da-c529b6b49b58.mp3",  # Outro CTA
 ]
 
 # ── SEO Metadata ──────────────────────────────────────────────────────────────
