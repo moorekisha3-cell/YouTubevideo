@@ -158,6 +158,121 @@ If you're 55 or older and haven't claimed yet — this could be one of the most 
 VIDEO1_THUMBNAIL = "https://d8j0ntlcm91z4.cloudfront.net/user_3E9CD98A05vyrIMdmQDzXZVh719/hf_20260620_044506_43e8a6fe-0f39-47b2-852c-c9ef96b86e7a.png"
 VIDEO2_THUMBNAIL = "https://d8j0ntlcm91z4.cloudfront.net/user_3E9CD98A05vyrIMdmQDzXZVh719/hf_20260620_044505_6bfabf61-5fbd-49c0-9ff1-8fc96d84e6df.png"
 
+# ── Video 3: The 4% Rule ──────────────────────────────────────────────────────
+VIDEO3_SCENES = [
+    BASE + "hf_20260621_050238_b189e5e6-6d4f-4958-9e41-e77ef34e5f7e.mp4",   # Hook
+    BASE + "hf_20260621_050240_efca38a5-5eb0-4227-ac51-4967be4319c3.mp4",   # What Is 4% Rule
+    BASE + "hf_20260621_050241_5848aae0-745f-4607-8b3d-e5b6d09e9483.mp4",   # Trinity Study
+    BASE + "hf_20260621_050242_ec3d52b4-9a4f-47e2-bb72-472660175b8b.mp4",   # Calculate Your Number
+    BASE + "hf_20260621_050244_31a40a0e-8bc6-4834-8572-2da5f51d1536.mp4",   # Does It Still Work
+    BASE + "hf_20260621_050245_cb6d7770-b253-43cb-a216-e3568e14d48e.mp4",   # Sequence of Returns
+    BASE + "hf_20260621_050247_16abdabf-0d52-47b0-b359-100b7f0f0773.mp4",   # Adjusting Withdrawals
+    BASE + "hf_20260621_050248_b80816ff-a674-47a4-8549-397888737003.mp4",   # CTA
+]
+
+VIDEO3_AUDIO = [
+    BASE + "hf_20260621_050303_b7bbd606-2fe4-455d-86d7-ef32aa20464e.mp3",   # Hook
+    BASE + "hf_20260621_050308_15933828-2655-4703-a7fb-e73fd4e9f0a1.mp3",   # What Is 4% Rule
+    BASE + "hf_20260621_050311_b36be98a-f0eb-4323-aec0-88a31950d994.mp3",   # Trinity Study
+    BASE + "hf_20260621_050317_780e942f-d972-4c0a-9d62-b8bda5a3c788.mp3",   # Calculate Your Number
+    BASE + "hf_20260621_050322_d6359e0b-ae91-4dfd-b196-4f034475a892.mp3",   # Does It Still Work
+    BASE + "hf_20260621_050327_c3efbe77-cc9f-491f-a229-f13adbcd90e1.mp3",   # Sequence of Returns
+    BASE + "hf_20260621_050331_92b5ae8b-b311-40ea-a431-3ee277b62cd9.mp3",   # Adjusting Withdrawals
+    BASE + "hf_20260621_050336_e808cf1f-f385-48db-858e-27d48a4baea0.mp3",   # CTA
+]
+
+VIDEO3_META = {
+    "title": "How to Never Run Out of Money in Retirement — The 4% Rule Explained",
+    "description": """💡 What if there was a simple rule — backed by decades of research — that tells you exactly how much you can safely spend in retirement without ever running out of money?
+
+It's called the 4% Rule. And in this video, I break it down in plain English so you can plan your retirement with confidence.
+
+✅ What the 4% Rule is and where it comes from (the Trinity Study)
+✅ How to calculate YOUR retirement savings target using the 25x Rule
+✅ Does the 4% Rule still work in today's market?
+✅ The hidden danger: Sequence of Returns Risk
+✅ How to stay flexible with dynamic withdrawals
+
+📌 CHAPTERS:
+0:00 – Introduction & Hook
+0:50 – What Is the 4% Rule?
+2:00 – Where It Comes From (Trinity Study)
+3:15 – How to Calculate Your Number (25x Rule)
+4:30 – Does It Still Work Today?
+5:45 – Sequence of Returns Risk
+6:45 – Adjusting Your Withdrawal Rate
+7:45 – Encouragement & Call to Action
+
+⚠️ This video is for educational purposes only and is not personalized financial advice. Always consult a qualified financial advisor before making retirement decisions.
+
+🔔 Subscribe to Economics 1144 for plain-English financial education every week!
+👍 If this helped you, please LIKE this video!
+
+#RetirementPlanning #4PercentRule #RetirementIncome #PersonalFinance #HowMuchToRetire #FinancialFreedom #TrinityStudy #RetirementSavings #Economics1144""",
+    "tags": [],
+    "categoryId": "27",
+}
+
+VIDEO3_THUMBNAIL = BASE + "hf_20260621_050424_f6069307-e868-4ce5-9524-3bb4bcbc0475.png"
+
+# ── Video 4: Roth IRA vs Traditional IRA ─────────────────────────────────────
+VIDEO4_SCENES = [
+    "SCENE_PENDING_911f52cd",                                                  # Hook — job completing
+    BASE + "hf_20260621_051340_fdfff17b-9a49-410f-a137-7b763e6a7f33.mp4",   # Traditional IRA
+    BASE + "hf_20260621_051343_e1a3dec4-7cee-4358-8415-647a9a36bb4d.mp4",   # Roth IRA
+    BASE + "hf_20260621_051344_e5ebe1a4-7369-4ef8-aebd-b30585de92ac.mp4",   # Income Limits
+    BASE + "hf_20260621_051707_36d1fc86-df60-4288-87ce-c6e0638f1502.mp4",   # Tax Now or Later
+    BASE + "hf_20260621_051346_19935e08-e42f-46e2-9dd7-8ef72efbabca.mp4",   # Withdrawal Rules
+    "SCENE_PENDING_f6cf09d4",                                                  # Which One — job completing
+    "SCENE_PENDING_7a9bca0e",                                                  # CTA — job completing
+]
+
+VIDEO4_AUDIO = [
+    BASE + "hf_20260621_050340_2697a8e7-f34c-4916-be30-c7279ffc5c12.mp3",   # Hook
+    BASE + "hf_20260621_050345_ca7178d9-f279-4fff-bfec-96dcfca287da.mp3",   # Traditional IRA
+    BASE + "hf_20260621_050349_8a15ec11-90a1-476f-b1f3-5e1f9aecaa00.mp3",   # Roth IRA
+    BASE + "hf_20260621_050354_0c032e9f-2db7-4470-aa52-c33e212c9c3e.mp3",   # Income Limits
+    BASE + "hf_20260621_050400_306e9f8d-e490-44b6-9c27-478b262b13a4.mp3",   # Tax Now or Later
+    BASE + "hf_20260621_050404_859b943c-c19b-4668-811a-31e9286bb90a.mp3",   # Withdrawal Rules
+    BASE + "hf_20260621_050409_e77ba58b-9f4a-44ed-8044-544c956feced.mp3",   # Which One
+    BASE + "hf_20260621_050413_e5d3dd69-f4fa-43f8-8c7c-a6bcc2bceab0.mp3",   # CTA
+]
+
+VIDEO4_META = {
+    "title": "Roth IRA vs Traditional IRA — Which One Is Right for You?",
+    "description": """🤔 Roth IRA or Traditional IRA — which should you choose? Getting this wrong could cost you tens of thousands of dollars in taxes over your lifetime. But once you understand the key difference, the answer becomes crystal clear.
+
+In this video, I break down both accounts in plain English so you can make a confident, informed decision.
+
+✅ How the Traditional IRA works (tax deduction now, taxes later)
+✅ How the Roth IRA works (pay taxes now, tax-FREE withdrawals forever)
+✅ 2024 income limits and eligibility rules
+✅ The key question: tax now or tax later?
+✅ Withdrawal rules, flexibility, and Required Minimum Distributions
+✅ A simple framework to decide which one is right for YOU
+
+📌 CHAPTERS:
+0:00 – Introduction & Hook
+0:50 – What Is a Traditional IRA?
+2:15 – What Is a Roth IRA?
+3:30 – Income Limits & Eligibility
+4:30 – The Key Question: Tax Now or Later?
+5:45 – Withdrawal Rules & Flexibility
+6:45 – Which One Is Right for You?
+7:45 – Encouragement & Call to Action
+
+⚠️ This video is for educational purposes only. Consult a fee-only financial advisor or CPA for personalized advice based on your situation.
+
+🔔 Subscribe to Economics 1144 for plain-English financial education every week!
+👍 If this helped you, please LIKE this video!
+
+#RothIRA #TraditionalIRA #IRA #RetirementPlanning #PersonalFinance #TaxStrategy #RetirementSavings #Economics1144 #RothVsTraditional""",
+    "tags": [],
+    "categoryId": "27",
+}
+
+VIDEO4_THUMBNAIL = BASE + "hf_20260621_050425_3a47fa14-f4ed-481a-975c-f0ebba77ba87.png"
+
 
 def download_scenes(scenes, folder):
     folder = Path(folder)
@@ -299,28 +414,27 @@ def main():
     work_dir = Path(__file__).parent
     youtube = get_youtube_service()
 
-    # ── VIDEO 2: Social Security — re-upload with proper audio ────────────────
-    print("\n=== VIDEO 2: Social Security Mistakes (with audio) ===")
-    v2_scenes = download_scenes(VIDEO2_SCENES, work_dir / "video2_scenes")
-    v2_audio  = download_audio(VIDEO2_AUDIO,  work_dir / "video2_audio")
-    if v2_scenes and v2_audio:
-        merged = merge_scenes_with_audio(v2_scenes, v2_audio, work_dir / "video2_merged")
-        v2_out = str(work_dir / "video2_final_audio.mp4")
-        concatenate(merged, v2_out)
-        v2_id = upload_video(youtube, v2_out, VIDEO2_META)
-        set_thumbnail(youtube, v2_id, VIDEO2_THUMBNAIL)
-        print(f"  ℹ️  Delete the silent version: https://youtu.be/pZ0oEyvGfUw")
+    # ── VIDEO 3: The 4% Rule ──────────────────────────────────────────────────
+    print("\n=== VIDEO 3: How to Never Run Out of Money — The 4% Rule ===")
+    v3_scenes = download_scenes(VIDEO3_SCENES, work_dir / "video3_scenes")
+    v3_audio  = download_audio(VIDEO3_AUDIO,  work_dir / "video3_audio")
+    if v3_scenes and v3_audio:
+        merged3 = merge_scenes_with_audio(v3_scenes, v3_audio, work_dir / "video3_merged")
+        v3_out = str(work_dir / "video3_final.mp4")
+        concatenate(merged3, v3_out)
+        v3_id = upload_video(youtube, v3_out, VIDEO3_META)
+        set_thumbnail(youtube, v3_id, VIDEO3_THUMBNAIL)
 
-    # ── VIDEO 1: Dividend Income ───────────────────────────────────────────
-    print("\n=== VIDEO 1: Dividend Income (with audio) ===")
-    v1_scenes = download_scenes(VIDEO1_SCENES, work_dir / "video1_scenes")
-    v1_audio  = download_audio(VIDEO1_AUDIO,  work_dir / "video1_audio")
-    if v1_scenes and v1_audio:
-        merged1 = merge_scenes_with_audio(v1_scenes, v1_audio, work_dir / "video1_merged")
-        v1_out = str(work_dir / "video1_final_audio.mp4")
-        concatenate(merged1, v1_out)
-        v1_id = upload_video(youtube, v1_out, VIDEO1_META)
-        set_thumbnail(youtube, v1_id, VIDEO1_THUMBNAIL)
+    # ── VIDEO 4: Roth IRA vs Traditional IRA ─────────────────────────────────
+    print("\n=== VIDEO 4: Roth IRA vs Traditional IRA ===")
+    v4_scenes = download_scenes(VIDEO4_SCENES, work_dir / "video4_scenes")
+    v4_audio  = download_audio(VIDEO4_AUDIO,  work_dir / "video4_audio")
+    if v4_scenes and v4_audio:
+        merged4 = merge_scenes_with_audio(v4_scenes, v4_audio, work_dir / "video4_merged")
+        v4_out = str(work_dir / "video4_final.mp4")
+        concatenate(merged4, v4_out)
+        v4_id = upload_video(youtube, v4_out, VIDEO4_META)
+        set_thumbnail(youtube, v4_id, VIDEO4_THUMBNAIL)
 
     print("\n✅ All done!")
 
