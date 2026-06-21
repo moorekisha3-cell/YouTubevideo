@@ -83,7 +83,7 @@ Whether you're 52 or 68, it is NOT too late to start. Here's what we cover:
 👍 If this helped you, please LIKE this video!
 
 #DividendInvesting #PassiveIncome #RetirementIncome #DividendStocks #PersonalFinance #Economics101 #FinancialFreedom #Investing #REITs #DividendETF""",
-    "tags": ["dividend income","how to build passive income","1000 a month dividends","dividend investing for beginners","dividend stocks","dividend ETFs","REITs for income","retirement income strategy","passive income investing","how much to invest for dividends","blue chip stocks","dividend aristocrats","income investing over 50","personal finance for retirees","economics 101","financial education","retirement planning","dividend yield explained","how to retire on dividends","investing for retirement"],
+    "tags": [],
     "categoryId": "27",  # Education
 }
 
@@ -125,7 +125,7 @@ If you're 55 or older and haven't claimed yet — this could be one of the most 
 👍 Hit LIKE if this video helped you!
 
 #SocialSecurity #RetirementPlanning #SocialSecurityMistakes #SocialSecurityBenefits #RetirementIncome #PersonalFinance #Economics101 #WhenToClaimSocialSecurity #SpousalBenefit #SSA""",
-    "tags": ["social security mistakes","when to claim social security","social security benefits","claiming social security at 62","social security at 70","spousal social security benefit","social security earnings test","social security taxes","check social security earnings record","social security administration","full retirement age","social security strategy","retirement planning","personal finance over 55","economics 101","how to maximize social security","social security tips","social security 2024","retire on social security","social security income"],
+    "tags": [],
     "categoryId": "27",
 }
 
