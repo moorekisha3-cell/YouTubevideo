@@ -217,14 +217,14 @@ VIDEO3_THUMBNAIL = BASE + "hf_20260621_050424_f6069307-e868-4ce5-9524-3bb4bcbc04
 
 # ── Video 4: Roth IRA vs Traditional IRA ─────────────────────────────────────
 VIDEO4_SCENES = [
-    "SCENE_PENDING_911f52cd",                                                  # Hook — job completing
+    BASE + "hf_20260621_051706_911f52cd-2be9-4385-8dac-82802781bec0.mp4",   # Hook
     BASE + "hf_20260621_051340_fdfff17b-9a49-410f-a137-7b763e6a7f33.mp4",   # Traditional IRA
     BASE + "hf_20260621_051343_e1a3dec4-7cee-4358-8415-647a9a36bb4d.mp4",   # Roth IRA
     BASE + "hf_20260621_051344_e5ebe1a4-7369-4ef8-aebd-b30585de92ac.mp4",   # Income Limits
     BASE + "hf_20260621_051707_36d1fc86-df60-4288-87ce-c6e0638f1502.mp4",   # Tax Now or Later
     BASE + "hf_20260621_051346_19935e08-e42f-46e2-9dd7-8ef72efbabca.mp4",   # Withdrawal Rules
-    "SCENE_PENDING_f6cf09d4",                                                  # Which One — job completing
-    "SCENE_PENDING_7a9bca0e",                                                  # CTA — job completing
+    BASE + "hf_20260621_051709_f6cf09d4-69ac-44bf-b24a-ae40c81137fb.mp4",   # Which One
+    BASE + "hf_20260621_051710_7a9bca0e-a040-4354-9cc7-973ce0418d77.mp4",   # CTA
 ]
 
 VIDEO4_AUDIO = [
