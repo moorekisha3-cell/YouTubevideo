@@ -193,6 +193,7 @@ def download_audio(audio_urls, folder):
 
 
 def merge_scenes_with_audio(scene_paths, audio_paths, work_dir):
+    Path(work_dir).mkdir(exist_ok=True)
     merged = []
     for i, (video, audio) in enumerate(zip(scene_paths, audio_paths)):
         out = str(Path(work_dir) / f"merged_{i+1:02d}.mp4")
