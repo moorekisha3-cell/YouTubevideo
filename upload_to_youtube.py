@@ -52,6 +52,19 @@ VIDEO2_SCENES = [
     BASE + "hf_20260620_042212_caffd49c-9f76-485a-babc-9a3405f86602.mp4",   # CTA Outro
 ]
 
+# ── Audio URLs (Tasha ElevenLabs voice) ──────────────────────────────────────
+# These will be filled in once audio generation completes
+VIDEO2_AUDIO = [
+    BASE + "AUDIO_01_PENDING",  # job 439d446b — Hook
+    BASE + "AUDIO_02_PENDING",  # job e4710790 — Mistake 1
+    BASE + "AUDIO_03_PENDING",  # job 77ef44dd — Mistake 2
+    BASE + "AUDIO_04_PENDING",  # job d635ba92 — Mistake 3 + mid CTA
+    BASE + "AUDIO_05_PENDING",  # job 3e1121ef — Mistake 4
+    BASE + "AUDIO_06_PENDING",  # job b229ef8e — Mistake 5
+    BASE + "AUDIO_07_PENDING",  # job 100ba092 — What To Do
+    BASE + "AUDIO_08_PENDING",  # job b59bc499 — Outro CTA
+]
+
 # ── SEO Metadata ──────────────────────────────────────────────────────────────
 VIDEO1_META = {
     "title": "How to Build $1,000 a Month in Dividend Income (Step by Step)",
@@ -157,6 +170,47 @@ def download_scenes(scenes, folder):
     return paths
 
 
+def download_audio(audio_urls, folder):
+    folder = Path(folder)
+    folder.mkdir(exist_ok=True)
+    paths = []
+    for i, url in enumerate(audio_urls):
+        if "PENDING" in url:
+            print(f"  ⚠️  Audio {i+1} not ready yet")
+            return None
+        dest = folder / f"audio_{i+1:02d}.mp3"
+        if dest.exists() and dest.stat().st_size > 10_000:
+            print(f"  ✓ Audio {i+1} already downloaded")
+        else:
+            print(f"  ↓ Downloading audio {i+1}...")
+            r = requests.get(url, stream=True, timeout=60)
+            r.raise_for_status()
+            with open(dest, "wb") as f:
+                for chunk in r.iter_content(65536):
+                    f.write(chunk)
+            print(f"    {dest.stat().st_size // 1024}KB")
+        paths.append(str(dest))
+    return paths
+
+
+def merge_scenes_with_audio(scene_paths, audio_paths, work_dir):
+    merged = []
+    for i, (video, audio) in enumerate(zip(scene_paths, audio_paths)):
+        out = str(Path(work_dir) / f"merged_{i+1:02d}.mp4")
+        cmd = ["ffmpeg", "-y",
+               "-stream_loop", "-1", "-i", video,
+               "-i", audio,
+               "-shortest", "-map", "0:v", "-map", "1:a",
+               "-c:v", "copy", "-c:a", "aac", out]
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode != 0:
+            print(f"ffmpeg merge error scene {i+1}:", result.stderr[-300:])
+            raise RuntimeError("ffmpeg merge failed")
+        print(f"  ✓ Scene {i+1} merged ({Path(out).stat().st_size // 1024}KB)")
+        merged.append(out)
+    return merged
+
+
 def concatenate(scene_paths, output_path):
     concat_file = Path(output_path).parent / "concat_list.txt"
     with open(concat_file, "w") as f:
@@ -232,8 +286,17 @@ def main():
     work_dir = Path(__file__).parent
     youtube = get_youtube_service()
 
-    # ── VIDEO 2: already uploaded as https://youtu.be/pZ0oEyvGfUw ────────────
-    print("\n=== VIDEO 2: Already uploaded — skipping ===")
+    # ── VIDEO 2: Social Security — re-upload with proper audio ────────────────
+    print("\n=== VIDEO 2: Social Security Mistakes (with audio) ===")
+    v2_scenes = download_scenes(VIDEO2_SCENES, work_dir / "video2_scenes")
+    v2_audio  = download_audio(VIDEO2_AUDIO,  work_dir / "video2_audio")
+    if v2_scenes and v2_audio:
+        merged = merge_scenes_with_audio(v2_scenes, v2_audio, work_dir / "video2_merged")
+        v2_out = str(work_dir / "video2_final_audio.mp4")
+        concatenate(merged, v2_out)
+        v2_id = upload_video(youtube, v2_out, VIDEO2_META)
+        set_thumbnail(youtube, v2_id, VIDEO2_THUMBNAIL)
+        print(f"  ℹ️  Delete the silent version: https://youtu.be/pZ0oEyvGfUw")
 
     # ── VIDEO 1: Dividend Income ───────────────────────────────────────────
     # NOTE: Update SCENE_9_RISK_URL and SCENE_10_CTA_URL in VIDEO1_SCENES above
