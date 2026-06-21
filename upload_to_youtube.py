@@ -210,29 +210,30 @@ def upload_video(youtube, video_path, meta):
 
 
 def set_thumbnail(youtube, video_id, thumbnail_url):
-    thumb_path = Path(__file__).parent / "thumbnail.jpg"
-    r = requests.get(thumbnail_url, timeout=30)
-    with open(thumb_path, "wb") as f:
-        f.write(r.content)
-    youtube.thumbnails().set(
-        videoId=video_id,
-        media_body=MediaFileUpload(thumb_path, mimetype="image/jpeg")
-    ).execute()
-    print(f"  ✓ Thumbnail set")
+    try:
+        from PIL import Image
+        import io
+        thumb_path = Path(__file__).parent / "thumbnail.jpg"
+        r = requests.get(thumbnail_url, timeout=30)
+        img = Image.open(io.BytesIO(r.content))
+        img = img.convert("RGB")
+        img.thumbnail((1280, 720))
+        img.save(thumb_path, "JPEG", quality=85)
+        youtube.thumbnails().set(
+            videoId=video_id,
+            media_body=MediaFileUpload(str(thumb_path), mimetype="image/jpeg")
+        ).execute()
+        print(f"  ✓ Thumbnail set")
+    except Exception as e:
+        print(f"  ⚠️  Thumbnail skipped ({e}) — upload manually in YouTube Studio")
 
 
 def main():
     work_dir = Path(__file__).parent
     youtube = get_youtube_service()
 
-    # ── VIDEO 2: Social Security (all 8 scenes ready) ──────────────────────
-    print("\n=== VIDEO 2: Social Security Mistakes ===")
-    v2_paths = download_scenes(VIDEO2_SCENES, work_dir / "video2_scenes")
-    if v2_paths:
-        v2_out = str(work_dir / "video2_final.mp4")
-        concatenate(v2_paths, v2_out)
-        v2_id = upload_video(youtube, v2_out, VIDEO2_META)
-        set_thumbnail(youtube, v2_id, VIDEO2_THUMBNAIL)
+    # ── VIDEO 2: already uploaded as https://youtu.be/pZ0oEyvGfUw ────────────
+    print("\n=== VIDEO 2: Already uploaded — skipping ===")
 
     # ── VIDEO 1: Dividend Income ───────────────────────────────────────────
     # NOTE: Update SCENE_9_RISK_URL and SCENE_10_CTA_URL in VIDEO1_SCENES above
