@@ -235,7 +235,7 @@
 
 **[B-ROLL]** Financial advisor and retired couple sitting together, reviewing a printed plan, warm and collaborative body language
 
-> "I want to be completely clear: I'm not a substitute for that professional conversation. Every household's numbers are different, and decisions like Roth conversions can have real tax consequences that deserve personalized advice. What I can do is make sure you walk into that conversation already understanding the questions to ask."
+> "I want to be completely clear: I'm not a Certified Financial Planner, a licensed financial advisor, a CPA, or an attorney — and I'm not a substitute for that professional conversation. Every household's numbers are different, and decisions like Roth conversions can have real tax consequences that deserve personalized advice. What I can do is make sure you walk into that conversation already understanding the questions to ask."
 
 ---
 
@@ -512,7 +512,7 @@ Now here's a piece almost nobody talks about: what happens after a spouse passes
 
 The encouraging news is that this entire situation is highly plannable. Strategies like Roth conversions during lower-income years, building true tax diversification across tax-deferred, tax-free, and taxable accounts, and using Qualified Charitable Distributions if charitable giving is already part of your life — these can all meaningfully soften or avoid this trap.
 
-As always, none of this is personalized advice — everyone's situation is different, and I always recommend sitting down with a qualified financial advisor or CPA to build a plan around your specific numbers.
+As always, I want to be upfront: I'm not a Certified Financial Planner, a licensed financial advisor, a CPA, or an attorney. None of this is personalized advice — everyone's situation is different, and I always recommend sitting down with a qualified financial advisor or CPA to build a plan around your specific numbers.
 
 If this episode helped you, please subscribe to the podcast and to Retirement Wealth 101 on YouTube, where we cover a new topic every week. And I'd love to know — what retirement topic should we cover next? Send us a message or leave a review and let us know. Thanks for listening, and I'll talk with you next time."
 
