@@ -327,7 +327,7 @@ Using a real-world style example, we walk through exactly how this tax trap buil
 
 This channel, Retirement Wealth 101, is built for adults aged 50 to 75 who want to protect their retirement savings, understand Social Security, reduce unnecessary taxes, invest wisely, avoid scams, and leave a strong financial legacy for their families. Every video is designed to educate first — never to sell you anything.
 
-Please remember: this video is for general educational purposes only and is not personalized financial, tax, or legal advice. Tax laws change, and everyone's situation is different. Always consult a qualified financial advisor, CPA, or tax professional before making decisions about Roth conversions, RMDs, or your retirement withdrawal strategy.
+Please remember: this video is for general educational purposes only and is not personalized financial, tax, or legal advice. The creator is not a Certified Financial Planner, licensed financial advisor, CPA, or attorney. Tax laws change, and everyone's situation is different. Always consult a qualified financial advisor, CPA, or tax professional before making decisions about Roth conversions, RMDs, or your retirement withdrawal strategy.
 
 If this video helped you understand your retirement taxes a little better, please give it a thumbs up and subscribe to Retirement Wealth 101 for a new video every week on Social Security, retirement income, tax planning, and protecting your wealth. Leave a comment below and let us know what retirement topic you'd like us to cover next.
 
@@ -643,6 +643,8 @@ This article is for general educational purposes only and does not constitute pe
 ## SECTION 19 — LEGAL DISCLAIMER
 
 This video and all related content (including but not limited to the description, blog article, checklist, and social media posts) are provided by Retirement Wealth 101 for general educational and informational purposes only. Nothing in this content constitutes personalized financial, investment, tax, or legal advice. No specific investment returns, tax outcomes, or results are guaranteed or implied.
+
+The creator of Retirement Wealth 101 is not a Certified Financial Planner (CFP), licensed financial advisor, Certified Public Accountant (CPA), or attorney, and does not hold any professional financial, tax, or legal license or certification. Any references in this content to "financial planners," "tax professionals," or similar roles describe general industry expertise for educational framing only — they are not a claim of personal credentials by the creator. All content reflects general research and publicly available information, presented for educational purposes only.
 
 Tax laws, contribution limits, RMD ages, and Medicare thresholds referenced in this content are subject to change and may not reflect the most current rules at the time you are viewing it. Individual circumstances vary significantly, and strategies mentioned — including Roth conversions, tax diversification, and Qualified Charitable Distributions — may not be appropriate for every person.
 
