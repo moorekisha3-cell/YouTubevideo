@@ -17,7 +17,7 @@ music: none
 - scene: Bold type beats build the claim, landing hard on the payoff line
 - duration: 14s
 - transition_in: cut
-- status: outline
+- status: animated
 - voiceover: "Here's something most retirees don't find out until it's too late: the money in your 401(k) hasn't actually been taxed yet. Once you turn 73, the IRS forces you to start withdrawing it — whether you need it or not. That's called a Required Minimum Distribution."
 - src: compositions/frames/01-hook.html
 - focal: the hero line "hasn't actually been taxed yet"
@@ -42,7 +42,7 @@ Scene 4 (10.0–14.0s): Cut to "Once you turn 73, the IRS forces you to start wi
 - scene: Three icons punch in around a rising bracket line — tax bracket, Social Security, Medicare
 - duration: 14s
 - transition_in: crossfade
-- status: outline
+- status: animated
 - voiceover: "And here's the part that really surprises people — that withdrawal can push you into a higher tax bracket, make more of your Social Security taxable, and even raise your Medicare premiums."
 - src: compositions/frames/02-problem.html
 - focal: the three consequence icons (tax bracket, Social Security, Medicare)
@@ -67,7 +67,7 @@ Scene 4 (10.5–14.0s): On "and even raise your Medicare premiums," the third ic
 - scene: A calm, single card reveals the reassurance and the fix
 - duration: 10s
 - transition_in: crossfade
-- status: outline
+- status: animated
 - voiceover: "The good news? This is avoidable. Strategies like Roth conversions and tax diversification, done early, can help you keep more of what you saved."
 - src: compositions/frames/03-solution.html
 - focal: the headline "This is avoidable."
@@ -91,7 +91,7 @@ Scene 3 (6.5–10.0s): Sub-line types in beneath the tags: "Done early, this can
 - scene: "Retirement Wealth 101" wordmark assembles and locks up with a follow prompt and disclaimer
 - duration: 12s
 - transition_in: crossfade
-- status: outline
+- status: animated
 - voiceover: "Watch the full video for the details — and remember, always talk with a qualified advisor before making changes to your accounts. Follow for more retirement tips every week."
 - src: compositions/frames/04-cta.html
 - focal: the "Retirement Wealth 101" wordmark lockup

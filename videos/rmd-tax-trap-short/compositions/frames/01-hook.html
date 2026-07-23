@@ -1,8 +1,8 @@
 <template>
-<div id="root" data-composition-id="01-hook">
+<div id="root" data-composition-id="01-hook" data-width="1080" data-height="1920" data-duration="14.5">
 
-  <div class="h01-bg-ground clip" data-start="0" data-duration="14" data-track-index="0"></div>
-  <div class="h01-bg-grid clip" data-start="0" data-duration="14" data-track-index="1"></div>
+  <div class="h01-bg-ground clip" data-start="0" data-duration="14.5" data-track-index="0"></div>
+  <div class="h01-bg-grid clip" data-start="0" data-duration="14.5" data-track-index="1"></div>
 
   <div class="h01-stage clip" data-start="0" data-duration="3" data-track-index="2">
     <div class="h01-line h01-line--md" id="h01-s1">Here&#39;s something most retirees don&#39;t find out&#8230;</div>
@@ -20,7 +20,7 @@
     <div class="h01-line h01-line--sm" id="h01-s4">Once you turn 73, the IRS forces you to start withdrawing it.</div>
   </div>
 
-  <div class="h01-payoff-stage clip" data-start="11.5" data-duration="2.5" data-track-index="6">
+  <div class="h01-payoff-stage clip" data-start="11.5" data-duration="3" data-track-index="6">
     <div class="h01-eyebrow" id="h01-eyebrow">Required Minimum Distribution</div>
     <div class="h01-card" id="h01-card">RMDs Start at Age 73</div>
   </div>
@@ -68,15 +68,16 @@
   }
 
   /* -- fixed-anchor text stage (shared centered anchor across beats) -- */
+  /* Fixed px positioning (not flex + cqw) — a flex `align-items:center` box
+     shrinks to fit ALL its content, including not-yet-revealed opacity:0
+     words, which desyncs the centered box from the true canvas center as
+     words progressively reveal. Absolute px positioning avoids that. */
 
-  .h01-stage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 34cqh;
-    padding-left: 11cqw;
-    padding-right: 11cqw;
+  #root .h01-stage {
+    position: absolute;
+    left: 110px;
+    right: 110px;
+    top: 700px;
   }
 
   .h01-line {
@@ -85,24 +86,19 @@
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 1.28;
-    text-wrap: balance;
-    max-width: 78cqw;
   }
 
   .h01-line--md {
-    font-size: 5.6cqw;
-    max-width: 72cqw;
+    font-size: 58px;
   }
 
   .h01-line--lg {
-    font-size: 7.2cqw;
+    font-size: 76px;
     font-weight: 700;
-    max-width: 68cqw;
   }
 
   .h01-line--sm {
-    font-size: 4.5cqw;
-    max-width: 78cqw;
+    font-size: 48px;
   }
 
   .h01-word {
@@ -115,23 +111,25 @@
 
   /* -- payoff beat -- */
 
-  .h01-payoff-stage {
+  #root .h01-payoff-stage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 620px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 30cqh;
-    gap: 2.2cqh;
+    gap: 40px;
   }
 
   .h01-eyebrow {
     background: rgba(30, 43, 250, 0.08);
     color: #1e2bfa;
     font-weight: 600;
-    font-size: 1.35cqw;
+    font-size: 22px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    padding: 0.9cqw 2.6cqw;
+    padding: 12px 28px;
     border-radius: 100px;
     transform-origin: 50% 50%;
   }
@@ -140,10 +138,10 @@
     background: rgba(30, 43, 250, 0.04);
     border: 1.5px solid rgba(30, 43, 250, 0.2);
     border-radius: 14px;
-    padding: 4cqw 6.5cqw;
+    padding: 44px 70px;
     color: #111111;
     font-weight: 700;
-    font-size: 5.4cqw;
+    font-size: 58px;
     letter-spacing: -0.02em;
     text-align: center;
     white-space: nowrap;
@@ -151,7 +149,6 @@
   }
 </style>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
 <script>
   (function () {
     window.__timelines = window.__timelines || {};
