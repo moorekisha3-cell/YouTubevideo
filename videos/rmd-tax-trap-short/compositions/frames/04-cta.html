@@ -18,27 +18,27 @@
   <div class="cta04-sublinewrap clip" data-start="3.0" data-duration="9.0" data-track-index="2">
     <div class="cta04-subline" id="cta04-subline-1"><span id="cta04-subline-1-text"></span></div>
     <div class="cta04-subline" id="cta04-subline-2">
-      <span class="cta04-word">Always</span>
-      <span class="cta04-word">talk</span>
-      <span class="cta04-word">with</span>
-      <span class="cta04-word">a</span>
-      <span class="cta04-word">qualified</span>
-      <span class="cta04-word">advisor</span>
-      <span class="cta04-word">before</span>
-      <span class="cta04-word">making</span>
-      <span class="cta04-word">changes</span>
-      <span class="cta04-word">to</span>
-      <span class="cta04-word">your</span>
-      <span class="cta04-word">accounts.</span>
+      <span class="cta04-sline-word">Always</span>
+      <span class="cta04-sline-word">talk</span>
+      <span class="cta04-sline-word">with</span>
+      <span class="cta04-sline-word">a</span>
+      <span class="cta04-sline-word">qualified</span>
+      <span class="cta04-sline-word">advisor</span>
+      <span class="cta04-sline-word">before</span>
+      <span class="cta04-sline-word">making</span>
+      <span class="cta04-sline-word">changes</span>
+      <span class="cta04-sline-word">to</span>
+      <span class="cta04-sline-word">your</span>
+      <span class="cta04-sline-word">accounts.</span>
     </div>
     <div class="cta04-subline" id="cta04-subline-3">
-      <span class="cta04-word">Follow</span>
-      <span class="cta04-word">for</span>
-      <span class="cta04-word">more</span>
-      <span class="cta04-word">retirement</span>
-      <span class="cta04-word">tips</span>
-      <span class="cta04-word">every</span>
-      <span class="cta04-word">week.</span>
+      <span class="cta04-sline-word">Follow</span>
+      <span class="cta04-sline-word">for</span>
+      <span class="cta04-sline-word">more</span>
+      <span class="cta04-sline-word">retirement</span>
+      <span class="cta04-sline-word">tips</span>
+      <span class="cta04-sline-word">every</span>
+      <span class="cta04-sline-word">week.</span>
     </div>
   </div>
 
@@ -178,7 +178,7 @@
     #cta04-subline-1 {
       white-space: pre-wrap;
     }
-    .cta04-subline .cta04-word {
+    .cta04-sline-word {
       display: inline-block;
       will-change: transform, opacity;
     }
@@ -267,7 +267,7 @@
       // Scene 3 (6.5-9.0s): crossfade sub-line -> advisor line; follow chip pops in beside the lockup.
       tl.to("#cta04-subline-1", { opacity: 0, duration: 0.3, ease: "power2.out" }, 6.35);
 
-      var line2Words = document.querySelectorAll("#cta04-subline-2 .cta04-word");
+      var line2Words = document.querySelectorAll("#cta04-subline-2 .cta04-sline-word");
       gsap.set(line2Words, { opacity: 0, y: 10 });
       line2Words.forEach(function (w, i) {
         tl.fromTo(
@@ -288,7 +288,7 @@
       // Scene 4 (9.0-12.0s): final line settles; disclaimer fades in and holds (full stillness after).
       tl.to("#cta04-subline-2", { opacity: 0, duration: 0.28, ease: "power2.out" }, 8.55);
 
-      var line3Words = document.querySelectorAll("#cta04-subline-3 .cta04-word");
+      var line3Words = document.querySelectorAll("#cta04-subline-3 .cta04-sline-word");
       gsap.set(line3Words, { opacity: 0, y: 10 });
       line3Words.forEach(function (w, i) {
         tl.fromTo(
