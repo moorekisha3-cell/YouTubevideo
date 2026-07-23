@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "preferences": {
+    "destination": {
+      "value": "youtube-shorts",
+      "confirmed_in": [
+        "rmd-tax-trap-short"
+      ],
+      "updated_at": "2026-07-23T01:33:41.170Z"
+    },
+    "aspect": {
+      "value": "1080x1920",
+      "confirmed_in": [
+        "rmd-tax-trap-short"
+      ],
+      "updated_at": "2026-07-23T01:33:41.220Z"
+    },
+    "language": {
+      "value": "en",
+      "confirmed_in": [
+        "rmd-tax-trap-short"
+      ],
+      "updated_at": "2026-07-23T01:33:41.269Z"
+    },
+    "flow": {
+      "value": "automation",
+      "confirmed_in": [
+        "rmd-tax-trap-short"
+      ],
+      "updated_at": "2026-07-23T01:33:41.322Z"
+    },
+    "storyboard": {
+      "value": "no",
+      "confirmed_in": [
+        "rmd-tax-trap-short"
+      ],
+      "updated_at": "2026-07-23T01:33:41.374Z"
+    },
+    "style_preset.faceless-explainer": {
+      "value": "blue-professional",
+      "confirmed_in": [
+        "rmd-tax-trap-short"
+      ],
+      "updated_at": "2026-07-23T01:34:13.166Z"
+    }
+  },
+  "sightings": {}
+}
