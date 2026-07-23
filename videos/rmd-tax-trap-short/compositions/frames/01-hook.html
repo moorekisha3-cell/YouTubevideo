@@ -1,0 +1,199 @@
+<template>
+<div id="root" data-composition-id="01-hook">
+
+  <div class="h01-bg-ground clip" data-start="0" data-duration="14" data-track-index="0"></div>
+  <div class="h01-bg-grid clip" data-start="0" data-duration="14" data-track-index="1"></div>
+
+  <div class="h01-stage clip" data-start="0" data-duration="3" data-track-index="2">
+    <div class="h01-line h01-line--md" id="h01-s1">Here&#39;s something most retirees don&#39;t find out&#8230;</div>
+  </div>
+
+  <div class="h01-stage clip" data-start="3" data-duration="3.5" data-track-index="3">
+    <div class="h01-line h01-line--lg" id="h01-s2">&#8230;until it&#39;s too late.</div>
+  </div>
+
+  <div class="h01-stage clip" data-start="6.5" data-duration="3.5" data-track-index="4">
+    <div class="h01-line h01-line--sm" id="h01-s3"><span class="h01-word">The</span> <span class="h01-word">money</span> <span class="h01-word">in</span> <span class="h01-word">your</span> <span class="h01-word">401(k)</span> <span class="h01-word h01-word--accent">hasn&#39;t</span> <span class="h01-word h01-word--accent">actually</span> <span class="h01-word h01-word--accent">been</span> <span class="h01-word h01-word--accent">taxed</span> <span class="h01-word h01-word--accent">yet.</span></div>
+  </div>
+
+  <div class="h01-stage clip" data-start="10" data-duration="1.5" data-track-index="5">
+    <div class="h01-line h01-line--sm" id="h01-s4">Once you turn 73, the IRS forces you to start withdrawing it.</div>
+  </div>
+
+  <div class="h01-payoff-stage clip" data-start="11.5" data-duration="2.5" data-track-index="6">
+    <div class="h01-eyebrow" id="h01-eyebrow">Required Minimum Distribution</div>
+    <div class="h01-card" id="h01-card">RMDs Start at Age 73</div>
+  </div>
+
+</div>
+
+<style>
+  #root {
+    position: relative;
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    container-type: size;
+    font-family: sans-serif;
+  }
+
+  #root .clip {
+    position: absolute;
+    inset: 0;
+  }
+
+  /* -- background -- */
+
+  .h01-bg-ground {
+    background: #fdfae7;
+  }
+
+  .h01-bg-grid {
+    opacity: 0.3;
+    background-image:
+      repeating-linear-gradient(
+        to right,
+        rgba(30, 43, 250, 0.28) 0px,
+        rgba(30, 43, 250, 0.28) 1px,
+        transparent 1px,
+        transparent 130px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        rgba(30, 43, 250, 0.28) 0px,
+        rgba(30, 43, 250, 0.28) 1px,
+        transparent 1px,
+        transparent 130px
+      );
+  }
+
+  /* -- fixed-anchor text stage (shared centered anchor across beats) -- */
+
+  .h01-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 34cqh;
+    padding-left: 11cqw;
+    padding-right: 11cqw;
+  }
+
+  .h01-line {
+    text-align: center;
+    color: #111111;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.28;
+    text-wrap: balance;
+    max-width: 78cqw;
+  }
+
+  .h01-line--md {
+    font-size: 5.6cqw;
+    max-width: 72cqw;
+  }
+
+  .h01-line--lg {
+    font-size: 7.2cqw;
+    font-weight: 700;
+    max-width: 68cqw;
+  }
+
+  .h01-line--sm {
+    font-size: 4.5cqw;
+    max-width: 78cqw;
+  }
+
+  .h01-word {
+    display: inline-block;
+  }
+
+  .h01-word--accent {
+    color: #1e2bfa;
+  }
+
+  /* -- payoff beat -- */
+
+  .h01-payoff-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30cqh;
+    gap: 2.2cqh;
+  }
+
+  .h01-eyebrow {
+    background: rgba(30, 43, 250, 0.08);
+    color: #1e2bfa;
+    font-weight: 600;
+    font-size: 1.35cqw;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.9cqw 2.6cqw;
+    border-radius: 100px;
+    transform-origin: 50% 50%;
+  }
+
+  .h01-card {
+    background: rgba(30, 43, 250, 0.04);
+    border: 1.5px solid rgba(30, 43, 250, 0.2);
+    border-radius: 14px;
+    padding: 4cqw 6.5cqw;
+    color: #111111;
+    font-weight: 700;
+    font-size: 5.4cqw;
+    letter-spacing: -0.02em;
+    text-align: center;
+    white-space: nowrap;
+    transform-origin: 50% 50%;
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script>
+  (function () {
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+
+    // Scene 1 (0.0-3.0s): soft rise-and-settle entrance.
+    tl.fromTo(
+      "#h01-s1",
+      { y: 22, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.42, ease: "power2.out" },
+      0.02
+    );
+
+    // Scene 2 (3.0-6.5s): hard-cut in-place word swap — no tween, the clip
+    // gate itself is the cut (larger weight is the only change, authored in CSS).
+
+    // Scene 3 (6.5-10.0s): per-word reveal, left to right, on the fixed anchor.
+    tl.fromTo(
+      gsap.utils.toArray("#h01-s3 .h01-word"),
+      { y: 14, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.32, ease: "power2.out", stagger: 0.22 },
+      6.55
+    );
+
+    // Scene 4a (10.0-11.5s): fixed line, hard cut — no tween.
+
+    // Scene 4b (11.5-14.0s): spring-pop payoff — eyebrow tag settles first,
+    // card pops from 0->1 and holds still (no continued motion).
+    tl.fromTo(
+      "#h01-eyebrow",
+      { y: 8, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.3, ease: "power2.out" },
+      11.55
+    );
+    tl.fromTo(
+      "#h01-card",
+      { scale: 0, opacity: 0 },
+      { scale: 1, opacity: 1, y: 0, duration: 0.55, ease: "power3.out" },
+      11.8
+    );
+
+    window.__timelines["01-hook"] = tl;
+  })();
+</script>
+</template>
