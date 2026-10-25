@@ -3,7 +3,11 @@
 GOAL:    The viewer leaves knowing a Roth IRA is taxed going in, so it pays out with $0 tax,
          and that $625 a month maxes it.
 OUTPUT:  HyperFrames, 1080 x 1920, 30 fps, vertical (YouTube Shorts).
-TIME:    32.9 s x 30 = 987 frames. No music bed (no music source here); effects only.
+TIME:    35.2 s x 30 = 1056 frames. Narrated (HeyGen voice "Joanna - Warm & Conversational", 32.6 s);
+         the voice is the clock. Effects sit under it. No music bed (no music source here).
+CAPTIONS: compositions/captions.html, built by scripts/make_captions.py from the HeyGen word timings
+         (assets/voice/words.json). Oswald 600 80 px, centred at y=196, 2-6 words a group,
+         upcoming words at 40%, each word lit on its spoken start. They replace the old header titles.
 
 LOOK:    Split ground at y=835: slate #4A5868 on top (Traditional), deep teal #0B7A78 below (Roth).
          Ink #FFFFFF. Accent gold #F2C14E for "$0", "$625" and the end-card rule only.

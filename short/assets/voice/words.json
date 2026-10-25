@@ -1,0 +1,524 @@
+[
+ {
+  "id": "w0",
+  "text": "Same",
+  "start": 0.299,
+  "end": 0.512
+ },
+ {
+  "id": "w1",
+  "text": "savings.",
+  "start": 0.597,
+  "end": 1.216
+ },
+ {
+  "id": "w2",
+  "text": "Two",
+  "start": 1.451,
+  "end": 1.621
+ },
+ {
+  "id": "w3",
+  "text": "accounts.",
+  "start": 1.707,
+  "end": 2.304
+ },
+ {
+  "id": "w4",
+  "text": "But",
+  "start": 2.603,
+  "end": 2.731
+ },
+ {
+  "id": "w5",
+  "text": "one",
+  "start": 2.773,
+  "end": 2.987
+ },
+ {
+  "id": "w6",
+  "text": "of",
+  "start": 3.029,
+  "end": 3.072
+ },
+ {
+  "id": "w7",
+  "text": "them",
+  "start": 3.115,
+  "end": 3.243
+ },
+ {
+  "id": "w8",
+  "text": "gets",
+  "start": 3.285,
+  "end": 3.413
+ },
+ {
+  "id": "w9",
+  "text": "taxed",
+  "start": 3.541,
+  "end": 3.797
+ },
+ {
+  "id": "w10",
+  "text": "later.",
+  "start": 3.84,
+  "end": 4.395
+ },
+ {
+  "id": "w11",
+  "text": "With",
+  "start": 4.779,
+  "end": 4.907
+ },
+ {
+  "id": "w12",
+  "text": "a",
+  "start": 4.949,
+  "end": 4.992
+ },
+ {
+  "id": "w13",
+  "text": "Traditional",
+  "start": 5.035,
+  "end": 5.248
+ },
+ {
+  "id": "w14",
+  "text": "IRA,",
+  "start": 5.461,
+  "end": 6.037
+ },
+ {
+  "id": "w15",
+  "text": "you",
+  "start": 6.229,
+  "end": 6.315
+ },
+ {
+  "id": "w16",
+  "text": "get",
+  "start": 6.357,
+  "end": 6.443
+ },
+ {
+  "id": "w17",
+  "text": "the",
+  "start": 6.485,
+  "end": 6.571
+ },
+ {
+  "id": "w18",
+  "text": "tax",
+  "start": 6.613,
+  "end": 6.741
+ },
+ {
+  "id": "w19",
+  "text": "break",
+  "start": 6.827,
+  "end": 6.997
+ },
+ {
+  "id": "w20",
+  "text": "now.",
+  "start": 7.083,
+  "end": 7.531
+ },
+ {
+  "id": "w21",
+  "text": "With",
+  "start": 7.808,
+  "end": 7.979
+ },
+ {
+  "id": "w22",
+  "text": "a",
+  "start": 8.021,
+  "end": 8.107
+ },
+ {
+  "id": "w23",
+  "text": "Roth,",
+  "start": 8.149,
+  "end": 8.491
+ },
+ {
+  "id": "w24",
+  "text": "you",
+  "start": 8.661,
+  "end": 8.875
+ },
+ {
+  "id": "w25",
+  "text": "pay",
+  "start": 8.917,
+  "end": 9.045
+ },
+ {
+  "id": "w26",
+  "text": "the",
+  "start": 9.088,
+  "end": 9.131
+ },
+ {
+  "id": "w27",
+  "text": "tax",
+  "start": 9.173,
+  "end": 9.344
+ },
+ {
+  "id": "w28",
+  "text": "going",
+  "start": 9.472,
+  "end": 9.6
+ },
+ {
+  "id": "w29",
+  "text": "in.",
+  "start": 9.728,
+  "end": 10.197
+ },
+ {
+  "id": "w30",
+  "text": "Then",
+  "start": 10.539,
+  "end": 10.709
+ },
+ {
+  "id": "w31",
+  "text": "both",
+  "start": 10.923,
+  "end": 11.136
+ },
+ {
+  "id": "w32",
+  "text": "grow",
+  "start": 11.264,
+  "end": 11.477
+ },
+ {
+  "id": "w33",
+  "text": "for",
+  "start": 11.563,
+  "end": 11.648
+ },
+ {
+  "id": "w34",
+  "text": "decades.",
+  "start": 11.691,
+  "end": 12.274
+ },
+ {
+  "id": "w35",
+  "text": "At",
+  "start": 12.474,
+  "end": 12.645
+ },
+ {
+  "id": "w36",
+  "text": "59",
+  "start": 12.688,
+  "end": 13.072
+ },
+ {
+  "id": "w37",
+  "text": "and",
+  "start": 13.157,
+  "end": 13.2
+ },
+ {
+  "id": "w38",
+  "text": "a",
+  "start": 13.242,
+  "end": 13.285
+ },
+ {
+  "id": "w39",
+  "text": "half,",
+  "start": 13.328,
+  "end": 13.669
+ },
+ {
+  "id": "w40",
+  "text": "it's",
+  "start": 13.84,
+  "end": 14.053
+ },
+ {
+  "id": "w41",
+  "text": "time",
+  "start": 14.096,
+  "end": 14.266
+ },
+ {
+  "id": "w42",
+  "text": "to",
+  "start": 14.309,
+  "end": 14.394
+ },
+ {
+  "id": "w43",
+  "text": "withdraw,",
+  "start": 14.437,
+  "end": 14.906
+ },
+ {
+  "id": "w44",
+  "text": "and",
+  "start": 15.077,
+  "end": 15.248
+ },
+ {
+  "id": "w45",
+  "text": "every",
+  "start": 15.29,
+  "end": 15.546
+ },
+ {
+  "id": "w46",
+  "text": "Traditional",
+  "start": 15.76,
+  "end": 16.016
+ },
+ {
+  "id": "w47",
+  "text": "withdrawal",
+  "start": 16.229,
+  "end": 16.613
+ },
+ {
+  "id": "w48",
+  "text": "is",
+  "start": 16.741,
+  "end": 16.869
+ },
+ {
+  "id": "w49",
+  "text": "taxed",
+  "start": 16.912,
+  "end": 17.21
+ },
+ {
+  "id": "w50",
+  "text": "as",
+  "start": 17.296,
+  "end": 17.338
+ },
+ {
+  "id": "w51",
+  "text": "income.",
+  "start": 17.381,
+  "end": 17.85
+ },
+ {
+  "id": "w52",
+  "text": "The",
+  "start": 18.021,
+  "end": 18.149
+ },
+ {
+  "id": "w53",
+  "text": "Roth?",
+  "start": 18.192,
+  "end": 18.512
+ },
+ {
+  "id": "w54",
+  "text": "Zero",
+  "start": 18.704,
+  "end": 19.045
+ },
+ {
+  "id": "w55",
+  "text": "tax",
+  "start": 19.173,
+  "end": 19.386
+ },
+ {
+  "id": "w56",
+  "text": "on",
+  "start": 19.557,
+  "end": 19.642
+ },
+ {
+  "id": "w57",
+  "text": "qualified",
+  "start": 19.685,
+  "end": 19.941
+ },
+ {
+  "id": "w58",
+  "text": "withdrawals.",
+  "start": 20.197,
+  "end": 20.837
+ },
+ {
+  "id": "w59",
+  "text": "So",
+  "start": 21.008,
+  "end": 21.136
+ },
+ {
+  "id": "w60",
+  "text": "pay",
+  "start": 21.178,
+  "end": 21.349
+ },
+ {
+  "id": "w61",
+  "text": "the",
+  "start": 21.392,
+  "end": 21.434
+ },
+ {
+  "id": "w62",
+  "text": "tax",
+  "start": 21.477,
+  "end": 21.648
+ },
+ {
+  "id": "w63",
+  "text": "now.",
+  "start": 21.776,
+  "end": 22.196
+ },
+ {
+  "id": "w64",
+  "text": "For",
+  "start": 22.445,
+  "end": 22.53
+ },
+ {
+  "id": "w65",
+  "text": "2026,",
+  "start": 22.573,
+  "end": 23.81
+ },
+ {
+  "id": "w66",
+  "text": "you",
+  "start": 24.023,
+  "end": 24.109
+ },
+ {
+  "id": "w67",
+  "text": "can",
+  "start": 24.151,
+  "end": 24.279
+ },
+ {
+  "id": "w68",
+  "text": "put",
+  "start": 24.322,
+  "end": 24.407
+ },
+ {
+  "id": "w69",
+  "text": "in",
+  "start": 24.493,
+  "end": 24.578
+ },
+ {
+  "id": "w70",
+  "text": "up",
+  "start": 24.621,
+  "end": 24.706
+ },
+ {
+  "id": "w71",
+  "text": "to",
+  "start": 24.749,
+  "end": 24.834
+ },
+ {
+  "id": "w72",
+  "text": "$7,500",
+  "start": 24.877,
+  "end": 26.072
+ },
+ {
+  "id": "w73",
+  "text": "a",
+  "start": 26.2,
+  "end": 26.285
+ },
+ {
+  "id": "w74",
+  "text": "year.",
+  "start": 26.328,
+  "end": 26.754
+ },
+ {
+  "id": "w75",
+  "text": "That's",
+  "start": 27.01,
+  "end": 27.224
+ },
+ {
+  "id": "w76",
+  "text": "about",
+  "start": 27.266,
+  "end": 27.394
+ },
+ {
+  "id": "w77",
+  "text": "$625",
+  "start": 27.437,
+  "end": 28.418
+ },
+ {
+  "id": "w78",
+  "text": "a",
+  "start": 28.503,
+  "end": 28.589
+ },
+ {
+  "id": "w79",
+  "text": "month.",
+  "start": 28.631,
+  "end": 29.058
+ },
+ {
+  "id": "w80",
+  "text": "Get",
+  "start": 29.399,
+  "end": 29.57
+ },
+ {
+  "id": "w81",
+  "text": "the",
+  "start": 29.613,
+  "end": 29.698
+ },
+ {
+  "id": "w82",
+  "text": "full",
+  "start": 29.741,
+  "end": 29.869
+ },
+ {
+  "id": "w83",
+  "text": "breakdown",
+  "start": 29.954,
+  "end": 30.381
+ },
+ {
+  "id": "w84",
+  "text": "on",
+  "start": 30.466,
+  "end": 30.552
+ },
+ {
+  "id": "w85",
+  "text": "Economics",
+  "start": 30.637,
+  "end": 31.064
+ },
+ {
+  "id": "w86",
+  "text": "1144.",
+  "start": 31.234,
+  "end": 32.375
+ }
+]

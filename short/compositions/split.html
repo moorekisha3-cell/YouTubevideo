@@ -35,36 +35,39 @@
       inset: 0;
       z-index: 4;
     }
-    .split-header {
+    #split-age {
       position: absolute;
-      left: 110px;
-      top: 200px;
-      width: 860px;
+      left: 506px;
+      top: 620px;
       font-family: "Oswald", sans-serif;
       font-weight: 600;
       font-size: 96px;
       line-height: 1;
-      letter-spacing: -0.01em;
       white-space: nowrap;
-    }
-    #split-age-quiet {
-      position: absolute;
-      left: 110px;
-      top: 176px;
-      font-size: 40px;
-      font-weight: 700;
-      opacity: 0.9;
-    }
-    #split-age {
-      top: 228px;
     }
     #split-illus {
       position: absolute;
-      left: 640px;
-      top: 290px;
+      left: 506px;
+      top: 730px;
       font-size: 30px;
       font-weight: 400;
       opacity: 0.85;
+    }
+    .split-dim {
+      position: absolute;
+      left: 0;
+      width: 1080px;
+      background: #000000;
+      opacity: 0;
+      pointer-events: none;
+    }
+    #split-dim-top {
+      top: 0;
+      height: 835px;
+    }
+    #split-dim-bottom {
+      top: 835px;
+      height: 1085px;
     }
     .split-jar {
       position: absolute;
@@ -140,18 +143,10 @@
     data-composition-id="split"
     data-width="1080"
     data-height="1920"
-    data-composition-variables='[{"id":"hookA","type":"string","label":"Hook line 1","default":"Same savings."},{"id":"hookB","type":"string","label":"Hook line 2","default":"One gets taxed later."}]'
   >
     <div id="split-slate"></div>
 
     <div class="split-top-layer">
-      <div id="split-hook-a" class="split-header" data-var-text="hookA">Same savings.</div>
-      <div id="split-hook-b" class="split-header" data-var-text="hookB">One gets taxed later.</div>
-      <div id="split-age-quiet">Both grow for decades</div>
-      <div id="split-age" class="split-header">Age 35</div>
-      <div id="split-illus">Illustrative growth</div>
-      <div id="split-withdraw" class="split-header">Time to withdraw</div>
-      <div id="split-whole" class="split-header">Roth pays out whole</div>
 
       <div id="split-trad-jar" class="split-jar">
         <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
@@ -180,7 +175,10 @@
       </div>
       <div id="split-trad-label" class="split-label">TRADITIONAL</div>
       <div id="split-trad-note" class="split-note">Taxed coming out</div>
+      <div id="split-age">Age 35</div>
+      <div id="split-illus">Illustrative growth</div>
       <div id="split-tax">&minus; Taxes</div>
+      <div id="split-dim-top" class="split-dim" data-layout-ignore></div>
     </div>
 
     <div id="split-teal" data-layout-allow-overflow data-layout-allow-occlusion></div>
@@ -214,6 +212,7 @@
       <div id="split-roth-note" class="split-note">Taxed going in</div>
       <div id="split-zero">$0</div>
       <div id="split-zero-note">tax on withdrawals</div>
+      <div id="split-dim-bottom" class="split-dim" data-layout-ignore></div>
     </div>
   </div>
   <script>
@@ -226,47 +225,45 @@
     const blurOut = (sel, at, d = 0.18) =>
       tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: d, ease: "power2.in" }, at);
 
+    // Timed to the narration (assets/voice/narration.wav). Captions carry the words.
     tl.fromTo("#split-teal", { y: 835 }, { y: 835, duration: 0.01 }, 0);
 
-    // Hook: line 1 on frame 0, line 2 per word grey to ink
-    blurOut("#split-hook-a", 1.5, 0.15);
-    blurIn("#split-hook-b", 1.65, 0.2);
+    // "With a Traditional IRA..." (4.8 s): the Roth half dims. "With a Roth..." (7.8 s): the swap.
+    tl.fromTo("#split-dim-bottom", { opacity: 0 }, { opacity: 0.35, duration: 0.3, ease: "power2.inOut" }, 4.75);
+    tl.to("#split-dim-bottom", { opacity: 0, duration: 0.3, ease: "power2.inOut" }, 7.7);
+    tl.fromTo("#split-dim-top", { opacity: 0 }, { opacity: 0.35, duration: 0.3, ease: "power2.inOut" }, 7.7);
+    tl.to("#split-dim-top", { opacity: 0, duration: 0.3, ease: "power2.inOut" }, 10.35);
 
-    // Grow: age 35 to 59½, both jars 30% to 80%
-    blurOut("#split-hook-b", 4.0, 0.15);
-    blurIn("#split-age-quiet", 4.15);
-    blurIn("#split-age", 4.2);
-    blurIn("#split-illus", 4.5);
+    // "Then both grow for decades. At fifty-nine and a half" (10.5-13.7 s): age 35 to 59½, jars 30% to 80%
+    blurIn("#split-age", 10.5);
+    blurIn("#split-illus", 10.7);
     const age = { v: 35 };
     tl.to(age, {
       v: 59.5,
-      duration: 5,
+      duration: 2.7,
       ease: "power2.inOut",
       onUpdate: () => {
         const el = document.querySelector("#split-age");
         el.textContent = age.v >= 59.5 ? "Age 59½" : "Age " + Math.floor(age.v);
       },
-    }, 4.3);
-    tl.fromTo(["#split-trad-level", "#split-roth-level"], { attr: { y: lvl(0.3) } }, { attr: { y: lvl(0.8) }, duration: 5, ease: "power2.inOut" }, 4.3);
+    }, 10.6);
+    tl.fromTo(["#split-trad-level", "#split-roth-level"], { attr: { y: lvl(0.3) } }, { attr: { y: lvl(0.8) }, duration: 2.7, ease: "power2.inOut" }, 10.6);
 
-    // Bite: a coral band wipes over the top of the Traditional coins, then drops out
-    blurOut(["#split-age-quiet", "#split-age", "#split-illus"], 10.0, 0.15);
-    blurIn("#split-withdraw", 10.15);
-    tl.fromTo("#split-trad-band", { attr: { width: 0 } }, { attr: { width: 248 }, duration: 0.4, ease: "power2.inOut" }, 10.7);
-    tl.to("#split-trad-level", { attr: { y: lvl(0.55) }, duration: 0.4, ease: "power3.in" }, 11.4);
-    tl.to("#split-trad-band", { attr: { y: lvl(0.55), height: 0 }, duration: 0.4, ease: "power3.in" }, 11.4);
-    tl.fromTo("#split-tax", { opacity: 0, scale: 1.18, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.3, ease: "expo.out", transformOrigin: "0% 50%" }, 11.8);
+    // "every Traditional withdrawal is taxed as income" (15.1-17.9 s): band wipes on, drops out on "taxed"
+    blurOut(["#split-age", "#split-illus"], 15.3, 0.15);
+    tl.fromTo("#split-trad-band", { attr: { width: 0 } }, { attr: { width: 248 }, duration: 0.4, ease: "power2.inOut" }, 15.75);
+    tl.to("#split-trad-level", { attr: { y: lvl(0.55) }, duration: 0.4, ease: "power3.in" }, 16.5);
+    tl.to("#split-trad-band", { attr: { y: lvl(0.55), height: 0 }, duration: 0.4, ease: "power3.in" }, 16.5);
+    tl.fromTo("#split-tax", { opacity: 0, scale: 1.18, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.3, ease: "expo.out", transformOrigin: "0% 50%" }, 16.9);
 
-    // Payout: $0 lands beside the Roth jar
-    blurOut("#split-withdraw", 14.6, 0.15);
-    blurIn("#split-whole", 14.75);
-    tl.fromTo("#split-zero", { opacity: 0, scale: 1.25, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.35, ease: "expo.out", transformOrigin: "0% 60%" }, 15.3);
-    blurIn("#split-zero-note", 15.55);
+    // "Zero tax on qualified withdrawals" (18.7 s): $0 lands beside the Roth jar
+    tl.fromTo("#split-zero", { opacity: 0, scale: 1.25, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.35, ease: "expo.out", transformOrigin: "0% 60%" }, 18.7);
+    blurIn("#split-zero-note", 18.95);
 
-    // Collapse: teal floods up, the Roth jar travels to centre (ends at 315,380 at 1.25x)
-    blurOut(["#split-whole", "#split-roth-label", "#split-roth-note", "#split-zero", "#split-zero-note"], 18.4, 0.2);
-    tl.to("#split-teal", { y: 0, duration: 0.7, ease: "power2.inOut" }, 18.55);
-    tl.to("#split-roth-jar", { x: 205, y: -470, scale: 1.25, transformOrigin: "0% 0%", duration: 1.0, ease: "power3.inOut" }, 18.7);
+    // "So pay the tax now" (21.0 s): teal floods up, the Roth jar travels to centre (ends at 315,380 at 1.25x)
+    blurOut(["#split-roth-label", "#split-roth-note", "#split-zero", "#split-zero-note"], 20.95, 0.2);
+    tl.to("#split-teal", { y: 0, duration: 0.7, ease: "power2.inOut" }, 21.05);
+    tl.to("#split-roth-jar", { x: 205, y: -470, scale: 1.25, transformOrigin: "0% 0%", duration: 1.0, ease: "power3.inOut" }, 21.2);
 
     window.__timelines["split"] = tl;
   </script>
