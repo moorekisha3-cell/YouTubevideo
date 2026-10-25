@@ -11,7 +11,7 @@ Usage (from the repo root):
   python3 short/upload_short.py --private    # private, to check it in YouTube Studio first
 """
 
-import json, sys
+import json, os, sys
 from pathlib import Path
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
@@ -21,8 +21,14 @@ ROOT = Path(__file__).resolve().parent.parent
 VIDEO = Path(__file__).resolve().parent / "renders" / "pay-the-tax-now.mp4"
 
 # ── Credentials (credentials.json in the repo root — keep that file private!) ──
-with open(ROOT / "credentials.json") as _f:
-    _creds = json.load(_f)
+# In a cloud session, set YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN instead.
+if os.environ.get("YT_REFRESH_TOKEN"):
+    _creds = {"client_id": os.environ["YT_CLIENT_ID"],
+              "client_secret": os.environ["YT_CLIENT_SECRET"],
+              "refresh_token": os.environ["YT_REFRESH_TOKEN"]}
+else:
+    with open(ROOT / "credentials.json") as _f:
+        _creds = json.load(_f)
 
 SHORT_META = {
     "title": "Roth vs Traditional IRA: Pay the Tax Now? #Shorts",
