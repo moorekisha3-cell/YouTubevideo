@@ -7,3 +7,6 @@ short/renders/*
 !short/renders/pay-the-tax-now.mp4
 short/.hyperframes/
 short/node_modules/
+short2/renders/*
+!short2/renders/your-number.mp4
+short2/.hyperframes/

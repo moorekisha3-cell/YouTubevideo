@@ -1,0 +1,68 @@
+[
+ {
+  "n": 0,
+  "start": 0.25,
+  "end": 1.696,
+  "caption": "How much do you need to retire?"
+ },
+ {
+  "n": 1,
+  "start": 1.976,
+  "end": 5.51,
+  "caption": "Start with what you'd spend each year. Say, $40,000."
+ },
+ {
+  "n": 2,
+  "start": 5.79,
+  "end": 7.425,
+  "caption": "Multiply it by 25."
+ },
+ {
+  "n": 3,
+  "start": 7.705,
+  "end": 9.921,
+  "caption": "That's $1,000,000. That's your number."
+ },
+ {
+  "n": 4,
+  "start": 10.201,
+  "end": 13.464,
+  "caption": "Why 25? It's the flip side of the 4% Rule."
+ },
+ {
+  "n": 5,
+  "start": 13.744,
+  "end": 20.93,
+  "caption": "Take out 4% of a million in year one, and that's $40,000, adjusted for inflation, for about 30 years."
+ },
+ {
+  "n": 6,
+  "start": 21.21,
+  "end": 24.774,
+  "caption": "Want $30,000 a year? You need $750,000."
+ },
+ {
+  "n": 7,
+  "start": 25.054,
+  "end": 27.539,
+  "caption": "Want $60,000? $1.5 million."
+ },
+ {
+  "n": 8,
+  "start": 27.819,
+  "end": 35.438,
+  "caption": "And Social Security counts. If it covers $20,000 of a $50,000 goal, you only need $750,000."
+ },
+ {
+  "n": 9,
+  "start": 35.718,
+  "end": 38.426,
+  "caption": "Your spending, times 25. That's your number."
+ },
+ {
+  "n": 10,
+  "start": 38.706,
+  "end": 43.35,
+  "caption": "Get the full breakdown on Economics 101. And please subscribe to my channel!"
+ }
+]
