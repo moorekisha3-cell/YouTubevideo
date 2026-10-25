@@ -1,0 +1,90 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background-color: #c4925e;
+      background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0) 0 176px, rgba(110, 66, 30, 0.35) 176px 180px);
+      font-family: "Inter", sans-serif;
+      color: #1f2a44;
+    }
+    #end-mark {
+      position: absolute;
+      left: 0;
+      top: 600px;
+      width: 1080px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      font-size: 112px;
+      line-height: 1;
+      letter-spacing: 0.02em;
+    }
+    #end-rule {
+      position: absolute;
+      left: 390px;
+      top: 765px;
+      width: 300px;
+      height: 10px;
+      background: #1f4f2e;
+    }
+    #end-cta {
+      position: absolute;
+      left: 0;
+      top: 825px;
+      width: 1080px;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 700;
+    }
+    #end-sub {
+      position: absolute;
+      left: 0;
+      top: 910px;
+      width: 1080px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 1;
+      color: #1f4f2e;
+    }
+    #end-disclaimer {
+      position: absolute;
+      left: 0;
+      top: 1160px;
+      width: 1080px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 400;
+    }
+  </style>
+  <div
+    id="root"
+    data-composition-id="endcard"
+    data-width="1080"
+    data-height="1920"
+    data-composition-variables='[{"id":"channel","type":"string","label":"Channel name","default":"ECONOMICS 101"},{"id":"cta","type":"string","label":"Call to action","default":"Full video on the channel"}]'
+  >
+    <div id="end-mark" data-var-text="channel">ECONOMICS 101</div>
+    <div id="end-rule"></div>
+    <div id="end-cta" data-var-text="cta">Full video on the channel</div>
+    <div id="end-sub">Please subscribe to my channel</div>
+    <div id="end-disclaimer">Educational only. Dividends aren&rsquo;t guaranteed.</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const blurIn = (sel, at, d = 0.2) =>
+      tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "power4.out" }, at);
+
+    // The mark wipes in left to right and lands on the bass hit (0.4 s)
+    tl.fromTo("#end-mark", { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.4, ease: "power4.out" }, 0.05);
+    tl.fromTo("#end-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "expo.out", transformOrigin: "50% 50%" }, 0.5);
+    blurIn("#end-cta", 0.9);
+    blurIn("#end-sub", 1.3);
+    blurIn("#end-disclaimer", 1.6);
+
+    window.__timelines["endcard"] = tl;
+  </script>
+</template>

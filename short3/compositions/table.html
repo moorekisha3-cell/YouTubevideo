@@ -1,0 +1,253 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background-color: #c4925e;
+      background-image:
+        repeating-linear-gradient(90deg, rgba(0, 0, 0, 0) 0 176px, rgba(110, 66, 30, 0.35) 176px 180px),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0 9px, rgba(0, 0, 0, 0.03) 9px 22px);
+      color: #1f2a44;
+      font-family: "Inter", sans-serif;
+    }
+    #tbl-stack {
+      position: absolute;
+      left: 320px;
+      top: 400px;
+      width: 440px;
+      height: 480px;
+    }
+    .tbl-bill {
+      position: absolute;
+      left: 0;
+      width: 440px;
+      height: 210px;
+      border-radius: 14px;
+      background: #7faf7c;
+      border: 4px solid #4e7d4b;
+      box-shadow: 0 6px 0 rgba(60, 30, 10, 0.22);
+    }
+    .tbl-bill::after {
+      content: "$";
+      position: absolute;
+      left: 160px;
+      top: 45px;
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      border: 4px solid #4e7d4b;
+      background: #9cc598;
+      color: #2f5a2d;
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 104px;
+      text-align: center;
+    }
+    .tbl-hidden { opacity: 0; }
+    .tbl-coin {
+      position: absolute;
+      border-radius: 50%;
+      background: #e2b23e;
+      border: 8px solid #a97c1c;
+      box-shadow: 0 6px 0 rgba(60, 30, 10, 0.25);
+      color: #4a3608;
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      text-align: center;
+      opacity: 0;
+    }
+    #tbl-coin-a { left: 455px; top: 300px; width: 170px; height: 170px; font-size: 50px; line-height: 154px; }
+    #tbl-coin-b { left: 447px; top: 292px; width: 186px; height: 186px; font-size: 54px; line-height: 170px; }
+    .tbl-drop { left: 485px; top: 330px; width: 110px; height: 110px; font-size: 40px; line-height: 94px; }
+    #tbl-val {
+      position: absolute;
+      left: 0;
+      top: 915px;
+      width: 1080px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      font-size: 130px;
+      line-height: 1;
+    }
+    .tbl-lbl {
+      position: absolute;
+      left: 0;
+      top: 1070px;
+      width: 1080px;
+      text-align: center;
+      font-size: 42px;
+      font-weight: 700;
+      opacity: 0;
+    }
+    #tbl-cal {
+      position: absolute;
+      left: 310px;
+      top: 430px;
+      width: 460px;
+      height: 450px;
+      border-radius: 18px;
+      background: #fbf7ee;
+      box-shadow: 0 10px 0 rgba(60, 30, 10, 0.22);
+      overflow: hidden;
+      opacity: 0;
+    }
+    #tbl-cal-head {
+      height: 96px;
+      background: #1f2a44;
+      color: #fbf7ee;
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      line-height: 96px;
+      text-align: center;
+    }
+    #tbl-cal-big {
+      margin-top: 40px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      font-size: 170px;
+      line-height: 1;
+    }
+    #tbl-cal-year {
+      margin-top: 26px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      opacity: 0;
+    }
+  </style>
+  <div id="root" data-composition-id="table" data-width="1080" data-height="1920">
+    <div id="tbl-stack">
+      <div id="tbl-bill-1" class="tbl-bill" style="top: 270px"></div>
+      <div id="tbl-bill-2" class="tbl-bill" style="top: 254px"></div>
+      <div id="tbl-bill-3" class="tbl-bill" style="top: 238px"></div>
+      <div id="tbl-bill-4" class="tbl-bill" style="top: 222px"></div>
+      <div id="tbl-bill-5" class="tbl-bill" style="top: 206px"></div>
+      <div id="tbl-bill-6" class="tbl-bill" style="top: 190px"></div>
+      <div id="tbl-bill-7" class="tbl-bill tbl-hidden" style="top: 174px"></div>
+      <div id="tbl-bill-8" class="tbl-bill tbl-hidden" style="top: 158px"></div>
+      <div id="tbl-bill-9" class="tbl-bill tbl-hidden" style="top: 142px"></div>
+      <div id="tbl-bill-10" class="tbl-bill tbl-hidden" style="top: 126px"></div>
+      <div id="tbl-bill-11" class="tbl-bill tbl-hidden" style="top: 110px"></div>
+      <div id="tbl-bill-12" class="tbl-bill tbl-hidden" style="top: 94px"></div>
+    </div>
+
+    <div id="tbl-cal">
+      <div id="tbl-cal-head">EVERY MONTH</div>
+      <div id="tbl-cal-big">$500</div>
+      <div id="tbl-cal-year">$6,000 a year</div>
+    </div>
+
+    <div id="tbl-coin-a" class="tbl-coin">$400</div>
+    <div id="tbl-coin-b" class="tbl-coin">$416</div>
+    <div data-layout-ignore id="tbl-drop-1" class="tbl-coin tbl-drop">$</div>
+    <div data-layout-ignore id="tbl-drop-2" class="tbl-coin tbl-drop">$</div>
+    <div data-layout-ignore id="tbl-drop-3" class="tbl-coin tbl-drop">$</div>
+    <div data-layout-ignore id="tbl-drop-4" class="tbl-coin tbl-drop">$</div>
+    <div data-layout-ignore id="tbl-drop-5" class="tbl-coin tbl-drop">$</div>
+    <div data-layout-ignore id="tbl-drop-6" class="tbl-coin tbl-drop">$</div>
+    <div data-layout-ignore id="tbl-drop-7" class="tbl-coin tbl-drop">$</div>
+
+    <div id="tbl-val">$10,000</div>
+    <div id="tbl-lbl-yield" class="tbl-lbl">at a 4% dividend yield</div>
+    <div id="tbl-lbl-year" class="tbl-lbl">Year 2</div>
+    <div id="tbl-lbl-illus" class="tbl-lbl" style="top: 1135px; font-size: 34px; font-weight: 400">Illustrative: 4% yield, all reinvested</div>
+    <div id="tbl-lbl-inv" class="tbl-lbl">invested at a 4% yield</div>
+  </div>
+  <script>
+    // Timed to the narration (assets/voice/words.json); numbers from script_video7.md.
+    const SCENE = 30.2;
+    const tl = gsap.timeline({ paused: true });
+    const show = (sel, at) =>
+      tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, at);
+    const hide = (sel, at) =>
+      tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.15, ease: "power2.in" }, at);
+
+    // The value under the stack, as rolls [start, end, value, ease]
+    const ROLLS = [[9.0, 9.7, 10400, "expo.out"], [13.95, 14.5, 10816, "expo.out"], [15.0, 19.45, 21911, "compound"],
+                   [24.3, 24.3, 0, "none"], [24.35, 25.0, 150000, "expo.out"]];
+    const valueAt = (t) => {
+      let v = 10000;
+      for (const [s, e, to, ease] of ROLLS) {
+        if (t < s) break;
+        if (t >= e) { v = to; continue; }
+        // the 20-year time-lapse compounds for real: $10,000 x 1.04^year, year 2 to 20
+        if (ease === "compound") return 10000 * Math.pow(1.04, 2 + 18 * ((t - s) / (e - s)));
+        return v + (to - v) * gsap.parseEase(ease)((t - s) / (e - s));
+      }
+      return v;
+    };
+    const elVal = document.querySelector("#tbl-val");
+    const elYear = document.querySelector("#tbl-lbl-year");
+    const drv = { p: 0 };
+    tl.to(drv, {
+      p: 1,
+      duration: SCENE,
+      ease: "none",
+      onUpdate: () => {
+        const t = drv.p * SCENE;
+        elVal.textContent = "$" + Math.round(valueAt(t)).toLocaleString("en-US");
+        const k = Math.min(1, Math.max(0, (t - 15.0) / 4.45));
+        elYear.textContent = "Year " + (2 + Math.floor(18 * k));
+      },
+    }, 0);
+
+    const addBill = (n, at) =>
+      tl.fromTo(`#tbl-bill-${n}`, { opacity: 0, y: -40 }, { opacity: 1, y: 0, duration: 0.3, ease: "expo.out" }, at);
+    // A small coin falls into the top of the stack and becomes the next bill
+    const drop = (n, land, topY, bill) => {
+      tl.fromTo(`#tbl-drop-${n}`, { opacity: 1, y: -560 }, { opacity: 1, y: topY, duration: 0.4, ease: "power2.in" }, land - 0.4);
+      tl.to(`#tbl-drop-${n}`, { opacity: 0, duration: 0.06 }, land);
+      if (bill) addBill(bill, land);
+    };
+
+    // "yielding 4%" (4.7 s)
+    show("#tbl-lbl-yield", 4.7);
+
+    // "Year one, it pays you $400" (6.7 s): a coin pops out of the stack
+    tl.fromTo("#tbl-coin-a", { opacity: 0, scale: 0.2, x: 0, y: 220 }, { opacity: 1, scale: 1, x: 250, y: 10, duration: 0.45, ease: "back.out(1.4)" }, 6.6);
+    // "Reinvest it" (8.0 s): the coin goes back in and becomes a bill
+    tl.to("#tbl-coin-a", { x: 0, y: 200, scale: 0.35, duration: 0.45, ease: "power3.in" }, 8.05);
+    tl.to("#tbl-coin-a", { opacity: 0, duration: 0.06 }, 8.5);
+    addBill(7, 8.5);
+
+    // "Next year's payout? $416." (13.07 s)
+    tl.fromTo("#tbl-coin-b", { opacity: 0, scale: 0.2, x: 0, y: 220 }, { opacity: 1, scale: 1, x: -250, y: 10, duration: 0.45, ease: "back.out(1.4)" }, 12.95);
+    tl.to("#tbl-coin-b", { x: 0, y: 190, scale: 0.35, duration: 0.45, ease: "power3.in" }, 13.55);
+    tl.to("#tbl-coin-b", { opacity: 0, duration: 0.06 }, 14.0);
+    addBill(8, 14.0);
+
+    // "Keep reinvesting for 20 years" (14.5-20.5 s): years tick, coins pour in, $21,911
+    hide("#tbl-lbl-yield", 14.6);
+    show("#tbl-lbl-year", 14.8);
+    drop(1, 15.4, 177, 9);
+    drop(2, 16.3, 161, 10);
+    drop(3, 17.2, 145, 11);
+    drop(4, 18.1, 129, 12);
+    show("#tbl-lbl-illus", 15.0);
+
+    // "Want $500 a month?" (20.76 s): the stack lifts away, a month card lands
+    hide(["#tbl-val", "#tbl-lbl-year", "#tbl-lbl-illus"], 20.5);
+    tl.to("#tbl-stack", { y: -1000, duration: 0.4, ease: "power3.in" }, 20.45);
+    tl.fromTo("#tbl-cal", { opacity: 1, y: 1600 }, { opacity: 1, y: 0, duration: 0.55, ease: "expo.out" }, 20.75);
+    show("#tbl-cal-year", 22.3);
+    // "about $150,000 invested" (24.9 s)
+    tl.fromTo("#tbl-val", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out", immediateRender: false }, 24.3);
+    show("#tbl-lbl-inv", 25.0);
+
+    // "Start small. Reinvest. Let it compound." (27.2 s): the stack comes back and keeps taking coins
+    hide(["#tbl-val", "#tbl-lbl-inv"], 26.95);
+    tl.to("#tbl-cal", { y: 1600, duration: 0.35, ease: "power3.in" }, 26.95);
+    tl.to("#tbl-stack", { y: 0, duration: 0.5, ease: "expo.out" }, 27.15);
+    drop(5, 27.75, 129, 0);
+    drop(6, 28.25, 129, 0);
+    drop(7, 29.1, 129, 0);
+    tl.fromTo("#tbl-stack", { scale: 1 }, { scale: 1.06, duration: 0.5, ease: "expo.out", transformOrigin: "50% 100%", immediateRender: false }, 29.15);
+
+    window.__timelines["table"] = tl;
+  </script>
+</template>

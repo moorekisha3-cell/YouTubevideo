@@ -10,3 +10,6 @@ short/node_modules/
 short2/renders/*
 !short2/renders/your-number.mp4
 short2/.hyperframes/
+short3/renders/*
+!short3/renders/ten-thousand-pays-you.mp4
+short3/.hyperframes/
