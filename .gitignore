@@ -3,6 +3,7 @@ video1_scenes/
 video2_scenes/
 video1_final.mp4
 video2_final.mp4
-short/renders/
+short/renders/*
+!short/renders/pay-the-tax-now.mp4
 short/.hyperframes/
 short/node_modules/
