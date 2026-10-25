@@ -1,7 +1,7 @@
 import json
 # word timings written by scripts/make_narration.py
 W=[(w["text"], w["start"], w["end"]) for w in json.load(open("assets/voice/words.json"))]
-sizes=[2,2,4,3,4,6,3,6,3,2,5,4,3,3,2,2,3,2,5,2,6,3,2,3,4,3]
+sizes=[2,2,4,3,4,6,3,6,3,2,5,4,3,3,2,2,3,2,5,2,6,3,2,3,4,3,3,3]
 assert sum(sizes)==len(W), (sum(sizes),len(W))
 groups=[];i=0
 for n in sizes: groups.append(W[i:i+n]); i+=n

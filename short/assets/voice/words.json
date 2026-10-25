@@ -482,43 +482,79 @@
  {
   "text": "Get",
   "start": 29.4,
-  "end": 29.625,
+  "end": 29.624,
   "id": "w80"
  },
  {
   "text": "the",
-  "start": 29.625,
-  "end": 29.85,
+  "start": 29.624,
+  "end": 29.848,
   "id": "w81"
  },
  {
   "text": "full",
-  "start": 29.85,
-  "end": 30.132,
+  "start": 29.848,
+  "end": 30.127,
   "id": "w82"
  },
  {
   "text": "breakdown",
-  "start": 30.132,
-  "end": 30.694,
+  "start": 30.127,
+  "end": 30.687,
   "id": "w83"
  },
  {
   "text": "on",
-  "start": 30.694,
-  "end": 30.863,
+  "start": 30.687,
+  "end": 30.855,
   "id": "w84"
  },
  {
   "text": "Economics",
-  "start": 30.863,
-  "end": 31.426,
+  "start": 30.855,
+  "end": 31.414,
   "id": "w85"
  },
  {
-  "text": "1144.",
-  "start": 31.426,
-  "end": 32.439,
+  "text": "101.",
+  "start": 31.414,
+  "end": 32.03,
   "id": "w86"
+ },
+ {
+  "text": "And",
+  "start": 32.03,
+  "end": 32.253,
+  "id": "w87"
+ },
+ {
+  "text": "please",
+  "start": 32.253,
+  "end": 32.645,
+  "id": "w88"
+ },
+ {
+  "text": "subscribe",
+  "start": 32.645,
+  "end": 33.204,
+  "id": "w89"
+ },
+ {
+  "text": "to",
+  "start": 33.204,
+  "end": 33.372,
+  "id": "w90"
+ },
+ {
+  "text": "my",
+  "start": 33.372,
+  "end": 33.54,
+  "id": "w91"
+ },
+ {
+  "text": "channel!",
+  "start": 33.54,
+  "end": 34.044,
+  "id": "w92"
  }
 ]

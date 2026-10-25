@@ -1,6 +1,6 @@
 # Review: Pay the Tax Now
 
-Render: `renders/pay-the-tax-now.mp4` (not committed). 1080x1920, 30 fps, 35.2 s, H.264 + AAC, 2.4 MB.
+Render: `renders/pay-the-tax-now.mp4` (not committed). 1080x1920, 30 fps, 36 s, H.264 + AAC.
 Built with HyperFrames CLI 0.8.194 (the plugin pins 0.8.195, which isn't on npm yet).
 
 ## Creative calls
@@ -13,7 +13,7 @@ Built with HyperFrames CLI 0.8.194 (the plugin pins 0.8.195, which isn't on npm 
 - Narration: the free local Kokoro voice (af_heart), made by `scripts/make_narration.py`. A HeyGen Joanna take
   was generated, but this session's network blocks its file host, so it was never used.
   Each sentence is synthesised separately and placed at the start time the scenes are cued to.
-  "IRA" is spelled out ("I R A") and the channel is read as "Economics eleven forty-four".
+  "IRA" is spelled out ("I R A") and the channel is read as "Economics one oh one", followed by "And please subscribe to my channel!"
 - Captions (`compositions/captions.html`, from `scripts/make_captions.py`) replace the header titles. Word times
   inside a sentence are estimated by character count, not measured (no transcriber can download here), so
   a highlighted word may lead or lag its spoken word by up to about 0.2 s.

@@ -31,11 +31,12 @@ SENTENCES = [
     (22.45, "For twenty twenty-six, you can put in up to seventy-five hundred dollars a year.",
             "For 2026, you can put in up to $7,500 a year."),
     (27.01, "That's about six hundred twenty-five a month.", "That's about $625 a month."),
-    (29.40, "Get the full breakdown on Economics eleven forty-four.", "Get the full breakdown on Economics 1144."),
+    (29.40, "Get the full breakdown on Economics one oh one. And please subscribe to my channel!",
+            "Get the full breakdown on Economics 101. And please subscribe to my channel!"),
 ]
 # Spoken length of a caption word, for spreading time (numbers say more than they show).
 SPOKEN = {"IRA,": "I R A", "59": "fifty-nine", "2026,": "twenty twenty-six", "$7,500": "seventy-five hundred dollars",
-          "$625": "six hundred twenty-five", "1144.": "eleven forty-four"}
+          "$625": "six hundred twenty-five", "101.": "one oh one"}
 
 
 def read(path):

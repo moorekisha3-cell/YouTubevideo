@@ -1,9 +1,9 @@
-# SPEC: Pay the Tax Now (Economics 1144 Short)
+# SPEC: Pay the Tax Now (Economics 101 Short)
 
 GOAL:    The viewer leaves knowing a Roth IRA is taxed going in, so it pays out with $0 tax,
          and that $625 a month maxes it.
 OUTPUT:  HyperFrames, 1080 x 1920, 30 fps, vertical (YouTube Shorts).
-TIME:    35.2 s x 30 = 1056 frames. Narrated with the free local Kokoro voice af_heart (scripts/make_narration.py,
+TIME:    36 s x 30 = 1080 frames. Narrated with the free local Kokoro voice af_heart (scripts/make_narration.py,
          32.8 s): each sentence is placed at the start time the scenes are cued to. Effects sit under it. No music bed (no music source here).
 CAPTIONS: compositions/captions.html, built by scripts/make_captions.py from estimated word timings
          (assets/voice/words.json). Oswald 600 80 px, centred at y=196, 2-6 words a group,
@@ -31,8 +31,8 @@ SHOTS:
   18.4-20.4  Collapse. Teal floods up over the slate; the Roth jar travels to the centre and grows 1.25x. Whoosh.
   20.4-28.4  Claim. "Pay the tax now." Coins drop into the slot: "Up to $7,500 a year", then "$625 a month maxes it";
              "2026 limit · $8,600 if 50 or older". Pops on each coin. Jar then shrinks into the end-card icon.
-  28.4-32.9  End card. ECONOMICS 1144 wipes in on a bass hit, gold rule, "Full video on the channel",
-             "Subscribe for more", "Educational only. Not financial advice." Holds 3 s.
+  28.4-32.9  End card. ECONOMICS 101 wipes in on a bass hit, gold rule, "Full video on the channel",
+             "Please subscribe to my channel", "Educational only. Not financial advice." Holds 3 s.
 
 FACTS (from script_video4.md / script_video9.md): Traditional = tax break now, taxed on withdrawal.
          Roth = after-tax money in, tax-free growth, $0 tax on withdrawals after 59½.

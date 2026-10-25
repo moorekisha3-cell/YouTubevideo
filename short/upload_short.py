@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Economics 1144: upload the "Pay the Tax Now" Short to YouTube.
+Economics 101: upload the "Pay the Tax Now" Short to YouTube.
 Run this on your local machine (it uses the same credentials.json as upload_to_youtube.py).
 
 Requirements:
@@ -39,15 +39,15 @@ A Traditional IRA gives you the tax break now, then taxes every withdrawal as in
 ✅ 2026 IRA limit: $7,500 a year (about $625 a month)
 ✅ Age 50 or older: $8,600
 
-📺 Watch the full breakdown, Roth IRA vs Traditional IRA, on the Economics 1144 channel.
+📺 Watch the full breakdown, Roth IRA vs Traditional IRA, on the Economics 101 channel.
 
 ⚠️ This video is for educational purposes only. Consult a fee-only financial advisor or CPA for personalized advice based on your situation.
 
-🔔 Subscribe to Economics 1144 for plain-English financial education every week!
+🔔 Please subscribe to Economics 101!
 
-#Shorts #RothIRA #TraditionalIRA #RetirementPlanning #PersonalFinance #Economics1144""",
+#Shorts #RothIRA #TraditionalIRA #RetirementPlanning #PersonalFinance #Economics101""",
     "tags": ["Roth IRA", "Traditional IRA", "IRA contribution limit 2026", "retirement planning",
-             "personal finance", "Economics 1144", "Shorts"],
+             "personal finance", "Economics 101", "Shorts"],
     "categoryId": "27",  # Education
 }
 
