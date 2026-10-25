@@ -1,0 +1,67 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #eef1f4; color: #1f2a44; font-family: "Inter", sans-serif; }
+    .t { position: absolute; font-family: "Oswald", sans-serif; font-weight: 600; line-height: 1.05; white-space: nowrap; }
+    .b { position: absolute; font-weight: 700; line-height: 1.25; white-space: nowrap; }
+    .m { color: #5b6478; }
+    .red { color: #c8372d; }
+    .green { color: #2e7d5b; }
+    .h { opacity: 0; }
+    .row { position: absolute; display: flex; align-items: center; gap: 28px; white-space: nowrap; }
+    .row svg { width: 64px; height: 64px; flex: none; }
+    .chapter { left: 140px; top: 84px; font-size: 76px; }
+
+  </style>
+  <div id="root" data-composition-id="how" data-width="1920" data-height="1080">
+
+    <div class="t chapter">How it works</div>
+    <div id="how-flow" style="position:absolute; inset:0">
+      <div id="how-line" style="position:absolute; left:260px; top:384px; width:1400px; height:12px; background:#1f2a44"></div>
+      <div id="how-n1" class="h" style="position:absolute; top:330px; width:120px; height:120px; border-radius:50%; background:#ffffff; border:10px solid #1f2a44; left:200px"></div>
+      <div id="how-n2" class="h" style="position:absolute; top:330px; width:120px; height:120px; border-radius:50%; background:#ffffff; border:10px solid #1f2a44; left:900px; border-color:#2e7d5b"></div>
+      <div id="how-n3" class="h" style="position:absolute; top:330px; width:120px; height:120px; border-radius:50%; background:#ffffff; border:10px solid #1f2a44; left:1600px; border-color:#c8372d"></div>
+      <div id="how-l1" class="b h" style="left:120px; top:480px; width:280px; text-align:center; font-size:40px; white-space:normal">Attorney drafts the deed</div>
+      <div id="how-l2" class="b h" style="left:820px; top:480px; width:280px; text-align:center; font-size:40px; white-space:normal">You: the life tenant</div>
+      <div id="how-l3" class="b h" style="left:1500px; top:480px; width:320px; text-align:center; font-size:40px; white-space:normal">Your beneficiaries</div>
+      <div id="how-cert" class="b m h" style="left:1000px; top:620px; width:760px; text-align:center; font-size:38px; white-space:normal">They record a death certificate with the county</div>
+      <div id="how-nocourt" class="t green h" style="left:1180px; top:200px; font-size:96px">No court.</div>
+    </div>
+    <div id="how-cmp" class="h" style="position:absolute; inset:0">
+      <div class="b" style="left:140px; top:260px; font-size:44px">With a will: probate</div>
+      <div id="how-bar" style="position:absolute; left:140px; top:330px; width:1500px; height:90px; background:#c8372d"></div>
+      <div id="how-6m" class="t h" style="left:150px; top:440px; font-size:60px">6 months</div>
+      <div id="how-2y" class="t red h" style="left:1500px; top:440px; font-size:60px">2 years</div>
+      <div id="how-fees" class="b m h" style="left:140px; top:560px; font-size:42px">Court fees and attorney fees the whole time</div>
+      <div class="b" style="left:140px; top:690px; font-size:44px">With a Ladybird Deed: <span class="green">no probate</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const S0 = 38.6;  // scene start (global s); times below are global
+    const at = (t) => Math.max(0, t - S0);
+    const show = (sel, t, d = 0.22) =>
+      tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "power4.out" }, at(t));
+    const hide = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, at(t));
+    const pop = (sel, t) =>
+      tl.fromTo(sel, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, at(t));
+    const ink = (sel, t) => tl.to(sel, { color: "#1f2a44", duration: 0.12 }, at(t));
+    const mute = (sel, t) => tl.to(sel, { opacity: 0.45, duration: 0.25, ease: "power2.out" }, at(t));
+
+
+    pop("#how-n1", 40.2); show("#how-l1", 40.3);
+    pop("#how-n2", 42.3); show("#how-l2", 42.4);
+    pop("#how-n3", 45.5); show("#how-l3", 45.6);
+    tl.fromTo("#how-line", { scaleX: 0 }, { scaleX: 1, duration: 2.0, ease: "power2.inOut", transformOrigin: "0% 50%" }, at(40.2));
+    tl.to("#how-n2", { x: 700, opacity: 0, duration: 0.8, ease: "power3.inOut" }, at(47.2));
+    show("#how-cert", 48.2);
+    pop("#how-nocourt", 51.4);
+    hide("#how-flow", 52.05);
+    show("#how-cmp", 52.2);
+    tl.fromTo("#how-bar", { scaleX: 0 }, { scaleX: 0.1, duration: 0.4, ease: "expo.out", transformOrigin: "0% 50%" }, at(54.2));
+    show("#how-6m", 54.2);
+    tl.to("#how-bar", { scaleX: 1, duration: 0.9, ease: "power2.inOut" }, at(54.9));
+    show("#how-2y", 55.4);
+    show("#how-fees", 56.6);
+    window.__timelines["how"] = tl;
+  </script>
+</template>

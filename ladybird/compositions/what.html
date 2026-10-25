@@ -1,0 +1,84 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #eef1f4; color: #1f2a44; font-family: "Inter", sans-serif; }
+    .t { position: absolute; font-family: "Oswald", sans-serif; font-weight: 600; line-height: 1.05; white-space: nowrap; }
+    .b { position: absolute; font-weight: 700; line-height: 1.25; white-space: nowrap; }
+    .m { color: #5b6478; }
+    .red { color: #c8372d; }
+    .green { color: #2e7d5b; }
+    .h { opacity: 0; }
+    .row { position: absolute; display: flex; align-items: center; gap: 28px; white-space: nowrap; }
+    .row svg { width: 64px; height: 64px; flex: none; }
+    .chapter { left: 140px; top: 84px; font-size: 76px; }
+
+  </style>
+  <div id="root" data-composition-id="what" data-width="1920" data-height="1080">
+
+    <div id="what-deed" style="position:absolute; left:200px; top:170px; width:480px; height:620px"><svg viewBox="0 0 480 620" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="14" width="460" height="600" rx="10" fill="rgba(31,42,68,0.12)"/>
+  <rect x="0" y="0" width="460" height="600" rx="10" fill="#ffffff" stroke="#1f2a44" stroke-width="6"/>
+  <text x="230" y="78" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="34" fill="#1f2a44">ENHANCED LIFE</text>
+  <text x="230" y="120" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="34" fill="#1f2a44">ESTATE DEED</text>
+  <rect x="60" y="160" width="340" height="10" rx="5" fill="#c9d1dc"/><rect x="60" y="195" width="300" height="10" rx="5" fill="#c9d1dc"/>
+  <rect x="60" y="230" width="330" height="10" rx="5" fill="#c9d1dc"/><rect x="60" y="265" width="260" height="10" rx="5" fill="#c9d1dc"/>
+  <rect x="60" y="300" width="320" height="10" rx="5" fill="#c9d1dc"/><rect x="60" y="335" width="280" height="10" rx="5" fill="#c9d1dc"/>
+  <text x="60" y="420" font-family="Inter" font-weight="700" font-size="28" fill="#5b6478">LIFE TENANT</text>
+  <rect x="60" y="440" width="200" height="6" fill="#1f2a44"/>
+  <text x="60" y="510" font-family="Inter" font-weight="700" font-size="28" fill="#5b6478">BENEFICIARIES</text>
+  <rect x="60" y="530" width="200" height="6" fill="#1f2a44"/>
+  <circle cx="360" cy="490" r="62" fill="#c8372d" opacity="0.12"/>
+</svg>
+      <div style="position:absolute; left:308px; top:438px; width:104px; height:104px"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="26" r="16" fill="#1f2a44"/>
+  <ellipse cx="50" cy="58" rx="38" ry="36" fill="#c8372d"/>
+  <rect x="48" y="24" width="4" height="70" fill="#1f2a44"/>
+  <circle cx="32" cy="50" r="7" fill="#1f2a44"/><circle cx="68" cy="50" r="7" fill="#1f2a44"/>
+  <circle cx="34" cy="74" r="6" fill="#1f2a44"/><circle cx="66" cy="74" r="6" fill="#1f2a44"/>
+</svg></div></div>
+    <div id="what-control" class="t h" style="left:820px; top:180px; font-size:84px">You keep <span class="green">full control</span></div>
+    <div id="what-l1" class="row h" style="left:820px; top:330px"><span><svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="28" fill="#2e7d5b"/>
+<polyline points="17,31 26,40 44,21" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t" style="position:static; font-size:60px">Sell it</span></div>
+    <div id="what-l2" class="row h" style="left:820px; top:430px"><span><svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="28" fill="#2e7d5b"/>
+<polyline points="17,31 26,40 44,21" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t" style="position:static; font-size:60px">Mortgage it</span></div>
+    <div id="what-l3" class="row h" style="left:820px; top:530px"><span><svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="28" fill="#2e7d5b"/>
+<polyline points="17,31 26,40 44,21" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t" style="position:static; font-size:60px">Change the deed</span></div>
+    <div id="what-perm" class="b m h" style="left:820px; top:640px; font-size:42px">Anytime. No one's permission needed.</div>
+    <div id="what-xfer" class="h" style="position:absolute; left:820px; top:250px; width:980px; height:420px">
+      <div class="t" style="left:0; top:0; font-size:84px">Then it passes <span class="green">automatically</span></div>
+      <div class="b" style="left:0; top:200px; font-size:56px">You</div>
+      <div id="what-arrow" style="position:absolute; left:150px; top:228px; width:520px; height:12px; background:#1f2a44"></div>
+      <div id="what-head" style="position:absolute; left:660px; top:210px; width:0; height:0; border-left:44px solid #1f2a44; border-top:24px solid transparent; border-bottom:24px solid transparent"></div>
+      <div class="b" style="left:730px; top:200px; font-size:56px">Your family</div>
+      <div class="b m" style="left:0; top:300px; font-size:40px">The people you named on the deed</div>
+    </div>
+    <div id="what-lbj" class="h" style="position:absolute; left:820px; top:230px; width:980px">
+      <div class="t" style="position:static; font-size:84px">Named for <span class="red">Lady Bird</span> Johnson</div>
+      <div class="b m" style="position:static; margin-top:30px; font-size:42px; white-space:normal; width:900px">President Lyndon B. Johnson reportedly used a similar deed for his wife.</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const S0 = 13.9;  // scene start (global s); times below are global
+    const at = (t) => Math.max(0, t - S0);
+    const show = (sel, t, d = 0.22) =>
+      tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "power4.out" }, at(t));
+    const hide = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, at(t));
+    const pop = (sel, t) =>
+      tl.fromTo(sel, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, at(t));
+    const ink = (sel, t) => tl.to(sel, { color: "#1f2a44", duration: 0.12 }, at(t));
+    const mute = (sel, t) => tl.to(sel, { opacity: 0.45, duration: 0.25, ease: "power2.out" }, at(t));
+
+
+    tl.fromTo("#what-deed", { opacity: 0, scale: 0.85, rotation: -4 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "expo.out" }, at(14.2));
+    show("#what-control", 17.9);
+    pop("#what-l1", 21.65); pop("#what-l2", 22.1); pop("#what-l3", 23.0);
+    show("#what-perm", 24.4);
+    hide(["#what-control", "#what-l1", "#what-l2", "#what-l3", "#what-perm"], 26.0);
+    show("#what-xfer", 26.25);
+    tl.fromTo("#what-arrow", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.inOut", transformOrigin: "0% 50%" }, at(28.4));
+    tl.fromTo("#what-head", { opacity: 0 }, { opacity: 1, duration: 0.1 }, at(28.95));
+    hide("#what-xfer", 31.2);
+    show("#what-lbj", 31.45);
+    window.__timelines["what"] = tl;
+  </script>
+</template>

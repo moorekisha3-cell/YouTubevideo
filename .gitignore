@@ -13,3 +13,6 @@ short2/.hyperframes/
 short3/renders/*
 !short3/renders/ten-thousand-pays-you.mp4
 short3/.hyperframes/
+ladybird/renders/*
+!ladybird/renders/ladybird-deed.mp4
+ladybird/.hyperframes/

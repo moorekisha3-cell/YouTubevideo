@@ -1,0 +1,82 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #eef1f4; color: #1f2a44; font-family: "Inter", sans-serif; }
+    .t { position: absolute; font-family: "Oswald", sans-serif; font-weight: 600; line-height: 1.05; white-space: nowrap; }
+    .b { position: absolute; font-weight: 700; line-height: 1.25; white-space: nowrap; }
+    .m { color: #5b6478; }
+    .red { color: #c8372d; }
+    .green { color: #2e7d5b; }
+    .h { opacity: 0; }
+    .row { position: absolute; display: flex; align-items: center; gap: 28px; white-space: nowrap; }
+    .row svg { width: 64px; height: 64px; flex: none; }
+    .chapter { left: 140px; top: 84px; font-size: 76px; }
+
+  </style>
+  <div id="root" data-composition-id="cta" data-width="1920" data-height="1080">
+
+    <div id="cta-gift" style="position:absolute; inset:0">
+      <div style="position:absolute; left:200px; top:230px; width:520px; height:480px"><svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="260" cy="466" rx="230" ry="12" fill="rgba(31,42,68,0.15)"/>
+  <rect x="70" y="200" width="380" height="262" fill="#ffffff" stroke="#1f2a44" stroke-width="10"/>
+  <polygon points="40,214 260,40 480,214" fill="#1f2a44"/>
+  <rect x="350" y="70" width="44" height="90" fill="#1f2a44"/>
+  <rect x="215" y="310" width="90" height="152" fill="#c8372d"/>
+  <circle cx="290" cy="392" r="6" fill="#ffffff"/>
+  <rect x="110" y="250" width="80" height="80" fill="#cfe0ef" stroke="#1f2a44" stroke-width="8"/>
+  <rect x="330" y="250" width="80" height="80" fill="#cfe0ef" stroke="#1f2a44" stroke-width="8"/>
+</svg></div>
+      <div id="cta-gift-t" class="t h" style="left:820px; top:330px; font-size:84px">One of the best gifts</div>
+      <div id="cta-gift-t2" class="t h" style="left:820px; top:440px; font-size:84px">you can leave <span class="red">your family</span></div>
+    </div>
+    <div id="cta-end" class="h" style="position:absolute; inset:0">
+      <div id="cta-mark" class="t" style="left:0; top:200px; width:1920px; text-align:center; font-size:130px">ECONOMICS 101</div>
+      <div id="cta-rule" style="position:absolute; left:810px; top:370px; width:300px; height:12px; background:#c8372d"></div>
+      <div id="cta-like" style="position:absolute; top:520px; height:120px; border-radius:60px; display:flex; align-items:center; justify-content:center; gap:22px; font-family:Oswald; font-weight:600; font-size:56px; left:430px; width:340px; background:#dfe4ea; color:#1f2a44">
+        <div id="cta-thumb" style="width:62px; height:62px"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 20h8v22H6z M16 42V21l9-15c3 0 5 2 4 6l-2 8h13c3 0 5 3 4 6l-4 13c-1 2-2 3-4 3z" fill="currentColor"/></svg></div><span id="cta-like-t">LIKE</span></div>
+      <div id="cta-sub" style="position:absolute; top:520px; height:120px; border-radius:60px; display:flex; align-items:center; justify-content:center; gap:22px; font-family:Oswald; font-weight:600; font-size:56px; left:830px; width:480px; background:#cc0000; color:#ffffff"><span id="cta-sub-t">SUBSCRIBE</span><span id="cta-sub-t2" style="position:absolute; opacity:0">SUBSCRIBED</span></div>
+      <div id="cta-bell" style="position:absolute; top:520px; height:120px; border-radius:60px; display:flex; align-items:center; justify-content:center; gap:22px; font-family:Oswald; font-weight:600; font-size:56px; left:1370px; width:120px; background:#dfe4ea; color:#1f2a44">
+        <div id="cta-bell-i" style="width:62px; height:62px"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 4c-7 0-12 5-12 12v10l-5 7v2h34v-2l-5-7V16c0-7-5-12-12-12z M18 39a6 6 0 0 0 12 0z" fill="currentColor"/></svg></div></div>
+      <div class="b m" style="left:0; top:720px; width:1920px; text-align:center; font-size:32px; font-weight:400">Educational only. Not legal advice. Laws vary by state.</div>
+      <div id="cta-cursor" style="position:absolute; left:1500px; top:760px; width:56px; height:78px"><svg viewBox="0 0 40 56" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 L2 46 L14 35 L22 54 L30 50 L22 32 L38 32 Z" fill="#ffffff" stroke="#1f2a44" stroke-width="3.5" stroke-linejoin="round"/></svg></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const S0 = 145.6;  // scene start (global s); times below are global
+    const at = (t) => Math.max(0, t - S0);
+    const show = (sel, t, d = 0.22) =>
+      tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "power4.out" }, at(t));
+    const hide = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, at(t));
+    const pop = (sel, t) =>
+      tl.fromTo(sel, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, at(t));
+    const ink = (sel, t) => tl.to(sel, { color: "#1f2a44", duration: 0.12 }, at(t));
+    const mute = (sel, t) => tl.to(sel, { opacity: 0.45, duration: 0.25, ease: "power2.out" }, at(t));
+
+
+    show("#cta-gift-t", 149.6); show("#cta-gift-t2", 150.6);
+    hide("#cta-gift", 152.6);
+    tl.fromTo("#cta-end", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, at(152.75));
+    tl.fromTo("#cta-mark", { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.45, ease: "power4.out" }, at(153.2));
+    tl.fromTo("#cta-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "expo.out" }, at(153.6));
+    pop("#cta-like", 154.6); pop("#cta-sub", 154.75); pop("#cta-bell", 154.9);
+    tl.fromTo("#cta-cursor", { opacity: 0 }, { opacity: 1, duration: 0.15 }, at(155.3));
+    // cursor clicks: like on "like" (156.4), subscribe on "subscribe" (157.2), bell on "bell" (159.4)
+    const click = (x, y, t) => {
+      tl.to("#cta-cursor", { x, y, duration: 0.45, ease: "power3.inOut" }, at(t - 0.5));
+      tl.to("#cta-cursor", { scale: 0.85, duration: 0.06, ease: "power2.in", transformOrigin: "0% 0%" }, at(t - 0.05));
+      tl.to("#cta-cursor", { scale: 1, duration: 0.12, ease: "power2.out" }, at(t + 0.03));
+    };
+    click(-870, -170, 156.4);
+    tl.to("#cta-like", { backgroundColor: "#1f2a44", color: "#ffffff", duration: 0.12 }, at(156.4));
+    tl.fromTo("#cta-thumb", { scale: 1 }, { scale: 1.35, duration: 0.14, ease: "power2.out", yoyo: true, repeat: 1, immediateRender: false }, at(156.4));
+    click(-440, -170, 157.2);
+    tl.to("#cta-sub", { backgroundColor: "#5b6478", duration: 0.12 }, at(157.2));
+    tl.to("#cta-sub-t", { opacity: 0, duration: 0.08 }, at(157.2));
+    tl.to("#cta-sub-t2", { opacity: 1, duration: 0.08 }, at(157.2));
+    click(-70, -170, 159.4);
+    tl.to("#cta-bell", { backgroundColor: "#1f2a44", color: "#ffffff", duration: 0.12 }, at(159.4));
+    tl.to("#cta-bell-i", { keyframes: { rotation: [0, -22, 18, -12, 8, 0] }, duration: 0.8, ease: "none", transformOrigin: "50% 10%" }, at(159.4));
+    tl.to("#cta-cursor", { opacity: 0, duration: 0.3 }, at(160.6));
+    window.__timelines["cta"] = tl;
+  </script>
+</template>

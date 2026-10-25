@@ -1,0 +1,42 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #eef1f4; color: #1f2a44; font-family: "Inter", sans-serif; }
+    .t { position: absolute; font-family: "Oswald", sans-serif; font-weight: 600; line-height: 1.05; white-space: nowrap; }
+    .b { position: absolute; font-weight: 700; line-height: 1.25; white-space: nowrap; }
+    .m { color: #5b6478; }
+    .red { color: #c8372d; }
+    .green { color: #2e7d5b; }
+    .h { opacity: 0; }
+    .row { position: absolute; display: flex; align-items: center; gap: 28px; white-space: nowrap; }
+    .row svg { width: 64px; height: 64px; flex: none; }
+    .chapter { left: 140px; top: 84px; font-size: 76px; }
+
+  </style>
+  <div id="root" data-composition-id="watch" data-width="1920" data-height="1080">
+
+    <div class="t chapter">4 things to watch out for</div>
+    <div id="w-1" class="h" style="position:absolute; left:140px; top:230px; display:flex; align-items:center; gap:34px"><div style="width:96px; height:96px; border-radius:50%; background:#c8372d; color:#ffffff; font-family:Oswald; font-weight:600; font-size:58px; line-height:96px; text-align:center; flex:none">1</div><div class="b" style="position:static; font-size:46px; white-space:normal; width:1500px">Use a licensed estate planning attorney. A badly drafted deed can fail.</div></div>
+    <div id="w-2" class="h" style="position:absolute; left:140px; top:380px; display:flex; align-items:center; gap:34px"><div style="width:96px; height:96px; border-radius:50%; background:#c8372d; color:#ffffff; font-family:Oswald; font-weight:600; font-size:58px; line-height:96px; text-align:center; flex:none">2</div><div class="b" style="position:static; font-size:46px; white-space:normal; width:1500px">Have a mortgage? Confirm the deed won&rsquo;t trigger a due-on-sale clause.</div></div>
+    <div id="w-3" class="h" style="position:absolute; left:140px; top:530px; display:flex; align-items:center; gap:34px"><div style="width:96px; height:96px; border-radius:50%; background:#c8372d; color:#ffffff; font-family:Oswald; font-weight:600; font-size:58px; line-height:96px; text-align:center; flex:none">3</div><div class="b" style="position:static; font-size:46px; white-space:normal; width:1500px">Blended families or disputes? Choose beneficiaries carefully.</div></div>
+    <div id="w-4" class="h" style="position:absolute; left:140px; top:680px; display:flex; align-items:center; gap:34px"><div style="width:96px; height:96px; border-radius:50%; background:#c8372d; color:#ffffff; font-family:Oswald; font-weight:600; font-size:58px; line-height:96px; text-align:center; flex:none">4</div><div class="b" style="position:static; font-size:46px; white-space:normal; width:1500px">It covers your home only. You still need a will, a healthcare directive and a power of attorney.</div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const S0 = 122.3;  // scene start (global s); times below are global
+    const at = (t) => Math.max(0, t - S0);
+    const show = (sel, t, d = 0.22) =>
+      tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "power4.out" }, at(t));
+    const hide = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, at(t));
+    const pop = (sel, t) =>
+      tl.fromTo(sel, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, at(t));
+    const ink = (sel, t) => tl.to(sel, { color: "#1f2a44", duration: 0.12 }, at(t));
+    const mute = (sel, t) => tl.to(sel, { opacity: 0.45, duration: 0.25, ease: "power2.out" }, at(t));
+
+
+    show("#w-1", 124.2);
+    mute("#w-1", 129.2); show("#w-2", 129.3);
+    mute("#w-2", 133.9); show("#w-3", 134.0);
+    mute("#w-3", 139.3); show("#w-4", 139.4);
+    window.__timelines["watch"] = tl;
+  </script>
+</template>

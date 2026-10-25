@@ -1,0 +1,68 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #eef1f4; color: #1f2a44; font-family: "Inter", sans-serif; }
+    .t { position: absolute; font-family: "Oswald", sans-serif; font-weight: 600; line-height: 1.05; white-space: nowrap; }
+    .b { position: absolute; font-weight: 700; line-height: 1.25; white-space: nowrap; }
+    .m { color: #5b6478; }
+    .red { color: #c8372d; }
+    .green { color: #2e7d5b; }
+    .h { opacity: 0; }
+    .row { position: absolute; display: flex; align-items: center; gap: 28px; white-space: nowrap; }
+    .row svg { width: 64px; height: 64px; flex: none; }
+    .chapter { left: 140px; top: 84px; font-size: 76px; }
+
+  </style>
+  <div id="root" data-composition-id="medicaid" data-width="1920" data-height="1080">
+
+    <div class="t chapter">The Medicaid advantage</div>
+    <div id="med-house" style="position:absolute; left:720px; top:250px; width:480px; height:443px"><svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="260" cy="466" rx="230" ry="12" fill="rgba(31,42,68,0.15)"/>
+  <rect x="70" y="200" width="380" height="262" fill="#ffffff" stroke="#1f2a44" stroke-width="10"/>
+  <polygon points="40,214 260,40 480,214" fill="#1f2a44"/>
+  <rect x="350" y="70" width="44" height="90" fill="#1f2a44"/>
+  <rect x="215" y="310" width="90" height="152" fill="#c8372d"/>
+  <circle cx="290" cy="392" r="6" fill="#ffffff"/>
+  <rect x="110" y="250" width="80" height="80" fill="#cfe0ef" stroke="#1f2a44" stroke-width="8"/>
+  <rect x="330" y="250" width="80" height="80" fill="#cfe0ef" stroke="#1f2a44" stroke-width="8"/>
+</svg></div>
+    <div id="med-care" class="b h" style="left:140px; top:300px; width:520px; font-size:44px">Medicaid pays for nursing home care</div>
+    <div id="med-arrows" class="h" style="position:absolute; inset:0">
+      <div class="b red" style="left:1380px; top:250px; font-size:44px">Estate recovery</div>
+      <div id="med-a1" style="position:absolute; width:300px; height:16px; background:#c8372d; left:1300px; top:380px"></div>
+      <div id="med-a2" style="position:absolute; width:300px; height:16px; background:#c8372d; left:1300px; top:470px"></div>
+      <div id="med-a3" style="position:absolute; width:300px; height:16px; background:#c8372d; left:1300px; top:560px"></div>
+    </div>
+    <div id="med-shield" class="h" style="position:absolute; left:1150px; top:300px; width:180px; height:220px">
+      <svg viewBox="0 0 180 220" xmlns="http://www.w3.org/2000/svg"><path d="M90 6 L170 36 L170 106 C170 160 132 196 90 214 C48 196 10 160 10 106 L10 36 Z" fill="#2e7d5b"/>
+      <polyline points="52,108 80,138 130,80" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div id="med-skip" class="t green h" style="left:140px; top:430px; font-size:72px">Skips probate</div>
+    <div id="med-only" class="b m h" style="left:140px; top:540px; width:540px; font-size:38px; white-space:normal">In Ladybird states, estate recovery usually reaches only probate assets</div>
+    <div id="med-keep" class="t h" style="left:720px; top:740px; font-size:64px">Your family keeps the house</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const S0 = 59.3;  // scene start (global s); times below are global
+    const at = (t) => Math.max(0, t - S0);
+    const show = (sel, t, d = 0.22) =>
+      tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "power4.out" }, at(t));
+    const hide = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, at(t));
+    const pop = (sel, t) =>
+      tl.fromTo(sel, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, at(t));
+    const ink = (sel, t) => tl.to(sel, { color: "#1f2a44", duration: 0.12 }, at(t));
+    const mute = (sel, t) => tl.to(sel, { opacity: 0.45, duration: 0.25, ease: "power2.out" }, at(t));
+
+
+    show("#med-care", 62.6);
+    show("#med-arrows", 64.9);
+    tl.fromTo(["#med-a1", "#med-a2", "#med-a3"], { x: 200 }, { x: 0, duration: 0.7, ease: "power3.out", stagger: 0.12 }, at(64.9));
+    tl.to(["#med-a1", "#med-a2", "#med-a3"], { x: -60, duration: 0.5, ease: "power2.in", stagger: 0.1 }, at(68.0));
+    hide("#med-care", 69.4);
+    pop("#med-shield", 69.9);
+    tl.to(["#med-a1", "#med-a2", "#med-a3"], { x: 320, opacity: 0, duration: 0.5, ease: "power2.out", stagger: 0.08 }, at(72.0));
+    hide("#med-arrows", 72.6);
+    show("#med-skip", 72.0);
+    show("#med-only", 75.3);
+    show("#med-keep", 78.8);
+    window.__timelines["medicaid"] = tl;
+  </script>
+</template>

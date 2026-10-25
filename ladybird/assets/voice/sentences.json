@@ -1,0 +1,184 @@
+[
+ {
+  "n": 0,
+  "scene": "hook",
+  "start": 0.25,
+  "end": 6.674,
+  "caption": "What if you could pass your home to your children without a will, without probate court, and without losing Medicaid benefits?"
+ },
+ {
+  "n": 1,
+  "scene": "hook",
+  "start": 6.954,
+  "end": 9.07,
+  "caption": "It's real. It's called a Ladybird Deed."
+ },
+ {
+  "n": 2,
+  "scene": "hook",
+  "start": 9.35,
+  "end": 13.38,
+  "caption": "In the next two minutes: how it works, who can use it, and what to watch out for."
+ },
+ {
+  "n": 3,
+  "scene": "what",
+  "start": 14.16,
+  "end": 20.695,
+  "caption": "A Ladybird Deed, officially an enhanced life estate deed, lets you keep full control of your home while you're alive."
+ },
+ {
+  "n": 4,
+  "scene": "what",
+  "start": 20.975,
+  "end": 25.915,
+  "caption": "You can still sell it, mortgage it, or change the deed at any time, without anyone's permission."
+ },
+ {
+  "n": 5,
+  "scene": "what",
+  "start": 26.195,
+  "end": 31.102,
+  "caption": "Then, the moment you pass away, the home transfers automatically to the people you named."
+ },
+ {
+  "n": 6,
+  "scene": "what",
+  "start": 31.382,
+  "end": 38.098,
+  "caption": "The nickname comes from President Lyndon B. Johnson, who reportedly used a similar deed for his wife, Lady Bird."
+ },
+ {
+  "n": 7,
+  "scene": "how",
+  "start": 38.878,
+  "end": 46.423,
+  "caption": "Here's how it works. An attorney drafts the deed. You're the life tenant. Your children, or whoever you choose, are the beneficiaries."
+ },
+ {
+  "n": 8,
+  "scene": "how",
+  "start": 46.703,
+  "end": 51.969,
+  "caption": "When you die, they record a death certificate with the county, and the home is theirs. No court."
+ },
+ {
+  "n": 9,
+  "scene": "how",
+  "start": 52.249,
+  "end": 58.795,
+  "caption": "With a will, your family could wait 6 months to 2 years in probate, paying court and attorney fees the whole time."
+ },
+ {
+  "n": 10,
+  "scene": "medicaid",
+  "start": 59.575,
+  "end": 61.165,
+  "caption": "Now the big one: Medicaid."
+ },
+ {
+  "n": 11,
+  "scene": "medicaid",
+  "start": 61.445,
+  "end": 69.348,
+  "caption": "If Medicaid pays for nursing home care, the state may try to recover that cost from your estate after you die. That can include your home."
+ },
+ {
+  "n": 12,
+  "scene": "medicaid",
+  "start": 69.628,
+  "end": 80.892,
+  "caption": "But a home passed by a Ladybird Deed skips probate, and in states that allow these deeds, estate recovery usually reaches only probate assets. So your family can keep the house."
+ },
+ {
+  "n": 13,
+  "scene": "tax",
+  "start": 81.672,
+  "end": 84.387,
+  "caption": "There's a tax benefit, too: the stepped-up basis."
+ },
+ {
+  "n": 14,
+  "scene": "tax",
+  "start": 84.667,
+  "end": 91.39,
+  "caption": "Say you bought your home for $80,000 in 1985, and it's worth $350,000 when you pass."
+ },
+ {
+  "n": 15,
+  "scene": "tax",
+  "start": 91.67,
+  "end": 99.241,
+  "caption": "Your child's cost basis resets to $350,000. Sell it for that, and they owe zero capital gains tax."
+ },
+ {
+  "n": 16,
+  "scene": "tax",
+  "start": 99.521,
+  "end": 108.013,
+  "caption": "If you'd added your child to the deed years earlier, they'd keep your $80,000 basis, and could owe tax on a $270,000 gain."
+ },
+ {
+  "n": 17,
+  "scene": "states",
+  "start": 108.793,
+  "end": 116.006,
+  "caption": "The catch? Only 5 states recognize Ladybird Deeds: Florida, Michigan, Texas, Vermont, and West Virginia."
+ },
+ {
+  "n": 18,
+  "scene": "states",
+  "start": 116.286,
+  "end": 121.835,
+  "caption": "Everywhere else, ask an attorney about a transfer on death deed or a revocable living trust."
+ },
+ {
+  "n": 19,
+  "scene": "watch",
+  "start": 122.615,
+  "end": 124.059,
+  "caption": "4 things to watch out for."
+ },
+ {
+  "n": 20,
+  "scene": "watch",
+  "start": 124.339,
+  "end": 129.004,
+  "caption": "1: use a licensed estate planning attorney. A badly drafted deed can fail."
+ },
+ {
+  "n": 21,
+  "scene": "watch",
+  "start": 129.284,
+  "end": 133.675,
+  "caption": "2: if you have a mortgage, confirm the deed won't trigger a due-on-sale clause."
+ },
+ {
+  "n": 22,
+  "scene": "watch",
+  "start": 133.955,
+  "end": 139.155,
+  "caption": "3: blended families and family disputes need careful choices about beneficiaries."
+ },
+ {
+  "n": 23,
+  "scene": "watch",
+  "start": 139.435,
+  "end": 145.143,
+  "caption": "And 4: it only covers your home. You still need a will, a healthcare directive, and a power of attorney."
+ },
+ {
+  "n": 24,
+  "scene": "cta",
+  "start": 145.923,
+  "end": 152.537,
+  "caption": "Protecting your home can take an hour or two with the right attorney. It could be one of the best gifts you leave your family."
+ },
+ {
+  "n": 25,
+  "scene": "cta",
+  "start": 152.817,
+  "end": 159.724,
+  "caption": "This is Economics 101. If this helped, give the video a like, please subscribe to my channel, and tap the bell."
+ }
+]
