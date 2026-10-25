@@ -69,14 +69,14 @@
     .split-jar {
       position: absolute;
       left: 110px;
-      width: 300px;
-      height: 400px;
+      width: 360px;
+      height: 480px;
     }
     #split-trad-jar {
-      top: 395px;
+      top: 335px;
     }
     #split-roth-jar {
-      top: 890px;
+      top: 850px;
     }
     .split-jar svg {
       display: block;
@@ -86,29 +86,29 @@
     }
     .split-label {
       position: absolute;
-      left: 470px;
+      left: 506px;
       font-family: "Oswald", sans-serif;
       font-weight: 600;
-      font-size: 84px;
+      font-size: 78px;
       line-height: 1;
       letter-spacing: 0.01em;
     }
     .split-note {
       position: absolute;
-      left: 470px;
-      width: 460px;
+      left: 506px;
+      width: 424px;
       font-size: 40px;
       font-weight: 700;
       line-height: 1.15;
     }
-    #split-trad-label { top: 440px; }
-    #split-trad-note { top: 545px; }
-    #split-roth-label { top: 935px; }
-    #split-roth-note { top: 1040px; }
+    #split-trad-label { top: 410px; }
+    #split-trad-note { top: 510px; }
+    #split-roth-label { top: 915px; }
+    #split-roth-note { top: 1015px; }
     #split-tax {
       position: absolute;
-      left: 470px;
-      top: 650px;
+      left: 506px;
+      top: 620px;
       font-family: "Oswald", sans-serif;
       font-weight: 600;
       font-size: 96px;
@@ -117,8 +117,8 @@
     }
     #split-zero {
       position: absolute;
-      left: 470px;
-      top: 1105px;
+      left: 506px;
+      top: 1085px;
       font-family: "Oswald", sans-serif;
       font-weight: 600;
       font-size: 150px;
@@ -127,9 +127,9 @@
     }
     #split-zero-note {
       position: absolute;
-      left: 630px;
-      top: 1150px;
-      width: 300px;
+      left: 666px;
+      top: 1130px;
+      width: 264px;
       font-size: 38px;
       font-weight: 700;
       line-height: 1.15;
@@ -263,10 +263,10 @@
     tl.fromTo("#split-zero", { opacity: 0, scale: 1.25, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.35, ease: "expo.out", transformOrigin: "0% 60%" }, 15.3);
     blurIn("#split-zero-note", 15.55);
 
-    // Collapse: teal floods up, the Roth jar travels to centre (ends at 352.5,400 at 1.25x)
+    // Collapse: teal floods up, the Roth jar travels to centre (ends at 315,380 at 1.25x)
     blurOut(["#split-whole", "#split-roth-label", "#split-roth-note", "#split-zero", "#split-zero-note"], 18.4, 0.2);
     tl.to("#split-teal", { y: 0, duration: 0.7, ease: "power2.inOut" }, 18.55);
-    tl.to("#split-roth-jar", { x: 242.5, y: -490, scale: 1.25, transformOrigin: "0% 0%", duration: 1.0, ease: "power3.inOut" }, 18.7);
+    tl.to("#split-roth-jar", { x: 205, y: -470, scale: 1.25, transformOrigin: "0% 0%", duration: 1.0, ease: "power3.inOut" }, 18.7);
 
     window.__timelines["split"] = tl;
   </script>

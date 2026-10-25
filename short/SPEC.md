@@ -1,16 +1,16 @@
 # SPEC: Pay the Tax Now (Economics 1144 Short)
 
 GOAL:    The viewer leaves knowing a Roth IRA is taxed going in, so it pays out with $0 tax,
-         and that $583 a month maxes it.
+         and that $625 a month maxes it.
 OUTPUT:  HyperFrames, 1080 x 1920, 30 fps, vertical (YouTube Shorts).
 TIME:    32.9 s x 30 = 987 frames. No music bed (no music source here); effects only.
 
 LOOK:    Split ground at y=835: slate #4A5868 on top (Traditional), deep teal #0B7A78 below (Roth).
-         Ink #FFFFFF. Accent gold #F2C14E for "$0", "$583" and the end-card rule only.
+         Ink #FFFFFF. Accent gold #F2C14E for "$0", "$625" and the end-card rule only.
          Tax colour coral #FFB4A2, used for the tax band and "- Taxes" only.
          Display: Oswald 600, 110-130 px headers, 80 px labels, -1% tracking. Body: Inter 400/700, 38-48 px.
          Medium: a glass coin jar with a metal lid and a coin slot, filled with stacked gold coins
-         (#E2B23E rows, #A97C1C seams every 18 px); glass is 10% white with a 6 px 90% white edge
+         (jars 360x480 px in the split, 450x600 px alone; #E2B23E rows, #A97C1C seams every 18 px); glass is 10% white with a 6 px 90% white edge
          and one 16 px highlight stripe; contact shadow 25% black.
 OBJECTS: Two identical coin jars (savings), a coral band inside the Traditional jar (the tax bite),
          falling gold coins with "$" (monthly contributions), an age counter (35 to 59½).
@@ -25,17 +25,17 @@ SHOTS:
              drops out of the jar (80% to 55%); "- Taxes" lands in coral. Bass impact on the drop.
   14.6-18.4  Payout. "Roth pays out whole". "$0" lands in gold beside the Roth jar, "tax on withdrawals". Ping.
   18.4-20.4  Collapse. Teal floods up over the slate; the Roth jar travels to the centre and grows 1.25x. Whoosh.
-  20.4-28.4  Claim. "Pay the tax now." Coins drop into the slot: "Up to $7,000 a year", then "$583 a month maxes it";
-             "2025 limit · $8,000 if 50 or older". Pops on each coin. Jar then shrinks into the end-card icon.
+  20.4-28.4  Claim. "Pay the tax now." Coins drop into the slot: "Up to $7,500 a year", then "$625 a month maxes it";
+             "2026 limit · $8,600 if 50 or older". Pops on each coin. Jar then shrinks into the end-card icon.
   28.4-32.9  End card. ECONOMICS 1144 wipes in on a bass hit, gold rule, "Full video on the channel",
              "Subscribe for more", "Educational only. Not financial advice." Holds 3 s.
 
 FACTS (from script_video4.md / script_video9.md): Traditional = tax break now, taxed on withdrawal.
          Roth = after-tax money in, tax-free growth, $0 tax on withdrawals after 59½.
-         2025 limit $7,000 (under 50), $8,000 (50+); $583 a month hits the limit. Jar growth is illustrative.
+         2026 IRS limit $7,500 (under 50), $8,600 (50+); $7,500 / 12 = $625 a month. Source: IRS newsroom, Nov 2025 (the scripts still say 2025: $7,000 / $583). Jar growth is illustrative.
 
 BANNED:  dark void ground, glow, particles, purple/blue gradients, glass cards, pill chips, centred-everything,
          fade-and-slide-up entrances, drifting titles, corner labels, three cards in a row, docked logo,
          a tax percentage or dollar amount the scripts never state.
 QA:      t=0 (both jars, labels and hook line readable), 9.5 (age 59½, jars equal), 12.2 (Traditional jar lower, "- Taxes"),
-         16.5 ("$0"), 20.2 (teal full frame, jar centred), 26.5 ("$583 a month maxes it"), 31.5 (end card complete).
+         16.5 ("$0"), 20.2 (teal full frame, jar centred), 26.5 ("$625 a month maxes it"), 31.5 (end card complete).

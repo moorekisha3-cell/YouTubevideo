@@ -7,8 +7,9 @@ Built with HyperFrames CLI 0.8.194 (the plugin pins 0.8.195, which isn't on npm 
 - Built storyline C from `STORYLINES.md`. A (Your Number) and B (The $10,000 That Pays You) are still there to build.
 - Facts come only from `script_video4.md` and `script_video9.md`. The tax bite is a visual with no percentage,
   and the jar growth is labelled "Illustrative growth".
-- The limits are the scripts' 2025 figures and are labelled "2025 limit". The 2026 IRS limits are higher
-  ($7,500, or $8,600 at 50+). Update the `limitLine`/`limitNote` variables in `compositions/roth.html` if you want current numbers.
+- The limits are the 2026 IRS figures: $7,500 a year, or $8,600 at 50+. $7,500 / 12 = $625 a month.
+  The scripts still carry the 2025 numbers ($7,000 / $8,000 / $583). The copy is in the `limitLine`/`limitNote`
+  variables and the `$625` span in `compositions/roth.html`.
 - Sound is effects only (bundled Pixabay-licensed files, no attribution needed): pop, bass impact, ping, whoosh.
   There's no music bed, because no music source is set up here (HeyGen CLI not installed).
 - GSAP is loaded from `assets/vendor/gsap.min.js`, because the render browser can't reach the CDN.
@@ -21,6 +22,6 @@ Built with HyperFrames CLI 0.8.194 (the plugin pins 0.8.195, which isn't on npm 
   22.8, 25.3, 25.9, 26.9 (mark swell) and 29.4 s, each on its picture cue.
 
 ## Weakest shot
-- 0-4 s: the jars fill only about 28% of the frame width, so the hook leans on its text. With more time I'd
-  enlarge the jars and give the hook a small motion, such as a coin dropping into each jar on frame 0-1.
+- 0-4 s: the jars are now 360x480 px (one-third of the frame width), the most the split panels allow. The hook
+  is still static until 1.5 s; a coin dropping into each jar on frames 0-1 would give it motion.
 - The lower third of the frame (below 1330 px) is plain teal by design, because the Shorts UI covers that area.
